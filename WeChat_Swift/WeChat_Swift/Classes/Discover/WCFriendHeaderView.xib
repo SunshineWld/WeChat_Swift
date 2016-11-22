@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="eU3-K8-kk5" customClass="WCFriendHeaderView" customModule="WeChat_Swift" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="360"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Ph-wk-bRB">
+                    <state key="normal" backgroundImage="pbg.jpg"/>
+                    <connections>
+                        <action selector="bgButtonAction:" destination="eU3-K8-kk5" eventType="touchUpInside" id="Xll-Cp-Ku6"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RqE-Mo-5e8">
+                    <constraints>
+                        <constraint firstAttribute="height" constant="60" id="EkN-uu-YqR"/>
+                        <constraint firstAttribute="width" constant="60" id="tN3-JP-g2m"/>
+                    </constraints>
+                    <state key="normal" backgroundImage="1.jpg"/>
+                    <connections>
+                        <action selector="headButtonAction:" destination="eU3-K8-kk5" eventType="touchUpInside" id="gvJ-pX-Afs"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Angel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EBN-bw-0Kf">
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="RqE-Mo-5e8" secondAttribute="trailing" constant="18" id="AAY-ou-W7j"/>
+                <constraint firstAttribute="bottom" secondItem="RqE-Mo-5e8" secondAttribute="bottom" constant="21" id="JFL-tg-N9G"/>
+                <constraint firstItem="5Ph-wk-bRB" firstAttribute="leading" secondItem="eU3-K8-kk5" secondAttribute="leading" id="Pqo-aK-ePp"/>
+                <constraint firstItem="5Ph-wk-bRB" firstAttribute="top" secondItem="eU3-K8-kk5" secondAttribute="top" id="U8i-5y-9tE"/>
+                <constraint firstAttribute="trailing" secondItem="5Ph-wk-bRB" secondAttribute="trailing" id="dLf-av-Ee1"/>
+                <constraint firstAttribute="bottom" secondItem="5Ph-wk-bRB" secondAttribute="bottom" constant="40" id="hIV-HI-TFu"/>
+                <constraint firstAttribute="bottom" secondItem="EBN-bw-0Kf" secondAttribute="bottom" constant="48" id="tX2-vE-sKF"/>
+                <constraint firstItem="RqE-Mo-5e8" firstAttribute="leading" secondItem="EBN-bw-0Kf" secondAttribute="trailing" constant="20" id="tY2-ar-6cs"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="bgButton" destination="5Ph-wk-bRB" id="rpx-Z8-Mr7"/>
+                <outlet property="headButton" destination="RqE-Mo-5e8" id="6Dg-3D-RFf"/>
+                <outlet property="nameLabel" destination="EBN-bw-0Kf" id="Mlf-1R-0dW"/>
+            </connections>
+            <point key="canvasLocation" x="-259" y="-78"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="1.jpg" width="638" height="640"/>
+        <image name="pbg.jpg" width="1280" height="720"/>
+    </resources>
+</document>
