@@ -56,7 +56,7 @@ class WCPhotosViewController: WCBaseViewController, UICollectionViewDelegate, UI
     
     func setupCollectionView() {
         
-        let itemSizeWidth = (width-10 - 3*space) / 4.0
+        let itemSizeWidth = (SCREEN_WIDTH-10 - 3*space) / 4.0
         flowLayout.itemSize = CGSize(width: itemSizeWidth, height: itemSizeWidth)
         flowLayout.minimumLineSpacing = CGFloat(space)
         flowLayout.minimumInteritemSpacing = CGFloat(space)
@@ -145,6 +145,7 @@ class WCPhotosViewController: WCBaseViewController, UICollectionViewDelegate, UI
 
         let publishVC = WCPublishViewController()
         let publishNav = WCBaseNavController(rootViewController: publishVC)
+        publishVC.imageArr = self.imageArray
         self.presentingViewController?.present(publishNav, animated: true, completion: nil)
         
     }

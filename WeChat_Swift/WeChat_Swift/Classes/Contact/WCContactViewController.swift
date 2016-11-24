@@ -8,9 +8,6 @@
 
 import UIKit
 
-let width = UIScreen.main.bounds.size.width
-let height = UIScreen.main.bounds.size.height
-
 class WCContactViewController: WCBaseViewController, UITableViewDelegate, UITableViewDataSource, UISearchBarDelegate, UISearchControllerDelegate, UISearchResultsUpdating{
 
     @IBOutlet weak var tableView: UITableView!
@@ -41,7 +38,7 @@ class WCContactViewController: WCBaseViewController, UITableViewDelegate, UITabl
         searchController.searchBar.setValue("取消", forKey: "_cancelButtonText");
        
 //        tableView.tableHeaderView = searchController.searchBar
-        searchController.searchBar.frame = CGRect(x: 0, y: 0, width: width, height: 44)
+        searchController.searchBar.frame = CGRect(x: 0, y: 0, width: SCREEN_WIDTH, height: 44)
         self.view.addSubview(searchController.searchBar)
         self.definesPresentationContext = true
         
