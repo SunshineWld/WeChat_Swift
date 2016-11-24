@@ -36,7 +36,7 @@ class WCFriendViewController: WCBaseViewController,UITableViewDelegate, UITableV
         headerView = Bundle.main.loadNibNamed("WCFriendHeaderView", owner: self, options: nil)?.last as! WCFriendHeaderView
         tableView.tableHeaderView = headerView
         
-        self.setupActivityView()
+//        self.setupActivityView()
     }
     
     func setupActivityView() {
@@ -60,6 +60,10 @@ class WCFriendViewController: WCBaseViewController,UITableViewDelegate, UITableV
         let actionSheet = UIAlertController.init(title: nil, message: nil, preferredStyle: UIAlertControllerStyle.actionSheet)
         let photos = UIAlertAction.init(title: "相册", style: UIAlertActionStyle.default) { (alertAction) in
             print(alertAction.title)
+            
+            let discoverNav = WCBaseNavController(rootViewController: WCAlbumsViewController())
+            self.present(discoverNav, animated: true, completion: nil)
+            
         }
         let cancel = UIAlertAction.init(title: "取消", style: UIAlertActionStyle.cancel) { (alertAction) in
             print(alertAction.title)

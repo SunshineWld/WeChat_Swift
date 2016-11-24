@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="WCPhotoCell" id="gTV-IL-0wX" customClass="WCPhotoCell" customModule="WeChat_Swift" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="97O-mH-y8C"/>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O4B-fU-k82">
+                        <constraints>
+                            <constraint firstAttribute="width" constant="27" id="0L1-yR-lXw"/>
+                            <constraint firstAttribute="height" constant="27" id="9F9-kD-QjM"/>
+                        </constraints>
+                        <state key="normal" image="unchecked.png"/>
+                        <state key="selected" image="checked.png"/>
+                        <connections>
+                            <action selector="checkBtnAction:" destination="gTV-IL-0wX" eventType="touchUpInside" id="Xes-7q-Bei"/>
+                        </connections>
+                    </button>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="O4B-fU-k82" secondAttribute="trailing" id="3IR-Ye-L6C"/>
+                <constraint firstItem="97O-mH-y8C" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="5J9-5c-Hfu"/>
+                <constraint firstAttribute="trailing" secondItem="97O-mH-y8C" secondAttribute="trailing" id="AtN-QZ-7kU"/>
+                <constraint firstItem="O4B-fU-k82" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="Beo-Zp-wnx"/>
+                <constraint firstItem="97O-mH-y8C" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="sI8-R3-sfx"/>
+                <constraint firstAttribute="bottom" secondItem="97O-mH-y8C" secondAttribute="bottom" id="vfT-o8-TpT"/>
+            </constraints>
+            <size key="customSize" width="98" height="89"/>
+            <connections>
+                <outlet property="checkBtn" destination="O4B-fU-k82" id="HBc-dX-H8i"/>
+                <outlet property="imageView" destination="97O-mH-y8C" id="m5k-nx-MDJ"/>
+            </connections>
+            <point key="canvasLocation" x="-345" y="-69"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="checked.png" width="54" height="54"/>
+        <image name="unchecked.png" width="54" height="54"/>
+    </resources>
+</document>

@@ -17,7 +17,7 @@ class WCBaseTabBarController: UITabBarController {
         
         self.addSubViewController()
         
-        self.selectedIndex = 0
+        self.selectedIndex = 2
     }
     
     func addSubViewController() {

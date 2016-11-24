@@ -7,6 +7,44 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4C1993F71DE5A0EF009F6078 /* WCPublishViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1993F51DE5A0EF009F6078 /* WCPublishViewController.swift */; };
+		4C1993F81DE5A0EF009F6078 /* WCPublishViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C1993F61DE5A0EF009F6078 /* WCPublishViewController.xib */; };
+		4C4077CE1DE56226000B823F /* WCFriendHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C4077CA1DE56226000B823F /* WCFriendHeaderView.swift */; };
+		4C4077CF1DE56226000B823F /* WCFriendHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C4077CB1DE56226000B823F /* WCFriendHeaderView.xib */; };
+		4C4077D51DE5627E000B823F /* WCPhotosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C4077D31DE5627E000B823F /* WCPhotosViewController.swift */; };
+		4C4077D61DE5627E000B823F /* WCPhotosViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C4077D41DE5627E000B823F /* WCPhotosViewController.xib */; };
+		4C4077D91DE562C7000B823F /* WCAlbumsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C4077D71DE562C7000B823F /* WCAlbumsViewController.swift */; };
+		4C4077DA1DE562C7000B823F /* WCAlbumsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C4077D81DE562C7000B823F /* WCAlbumsViewController.xib */; };
+		4C4077DD1DE56DB6000B823F /* WCPhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C4077DB1DE56DB6000B823F /* WCPhotoCell.swift */; };
+		4C4077DE1DE56DB6000B823F /* WCPhotoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C4077DC1DE56DB6000B823F /* WCPhotoCell.xib */; };
+		4C4077E11DE56F4F000B823F /* checked.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C4077DF1DE56F4F000B823F /* checked.png */; };
+		4C4077E21DE56F4F000B823F /* unchecked.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C4077E01DE56F4F000B823F /* unchecked.png */; };
+		4C4077E41DE5750D000B823F /* PictureCell.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4C4077E31DE5750D000B823F /* PictureCell.plist */; };
+		4C4077FE1DE578E8000B823F /* 00.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4C4077E61DE578E8000B823F /* 00.jpg */; };
+		4C4077FF1DE578E8000B823F /* 01.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4C4077E71DE578E8000B823F /* 01.jpg */; };
+		4C4078001DE578E8000B823F /* 10.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4C4077E81DE578E8000B823F /* 10.jpg */; };
+		4C4078011DE578E8000B823F /* 11.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4C4077E91DE578E8000B823F /* 11.jpg */; };
+		4C4078021DE578E8000B823F /* 12.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4C4077EA1DE578E8000B823F /* 12.jpg */; };
+		4C4078031DE578E8000B823F /* 13.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4C4077EB1DE578E8000B823F /* 13.jpg */; };
+		4C4078041DE578E8000B823F /* 14.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4C4077EC1DE578E8000B823F /* 14.jpg */; };
+		4C4078051DE578E8000B823F /* 15.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4C4077ED1DE578E8000B823F /* 15.jpg */; };
+		4C4078061DE578E8000B823F /* 16.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4C4077EE1DE578E8000B823F /* 16.jpg */; };
+		4C4078071DE578E8000B823F /* 17.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4C4077EF1DE578E8000B823F /* 17.jpg */; };
+		4C4078081DE578E8000B823F /* 18.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4C4077F01DE578E8000B823F /* 18.jpg */; };
+		4C4078091DE578E8000B823F /* 19.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4C4077F11DE578E8000B823F /* 19.jpg */; };
+		4C40780A1DE578E8000B823F /* 02.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4C4077F21DE578E8000B823F /* 02.jpg */; };
+		4C40780B1DE578E8000B823F /* 20.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4C4077F31DE578E8000B823F /* 20.jpg */; };
+		4C40780C1DE578E8000B823F /* 21.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4C4077F41DE578E8000B823F /* 21.jpg */; };
+		4C40780D1DE578E8000B823F /* 22.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4C4077F51DE578E8000B823F /* 22.jpg */; };
+		4C40780E1DE578E8000B823F /* 23.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4C4077F61DE578E8000B823F /* 23.jpg */; };
+		4C40780F1DE578E8000B823F /* 03.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4C4077F71DE578E8000B823F /* 03.jpg */; };
+		4C4078101DE578E8000B823F /* 04.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4C4077F81DE578E8000B823F /* 04.jpg */; };
+		4C4078111DE578E8000B823F /* 05.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4C4077F91DE578E8000B823F /* 05.jpg */; };
+		4C4078121DE578E8000B823F /* 06.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4C4077FA1DE578E8000B823F /* 06.jpg */; };
+		4C4078131DE578E8000B823F /* 07.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4C4077FB1DE578E8000B823F /* 07.jpg */; };
+		4C4078141DE578E8000B823F /* 08.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4C4077FC1DE578E8000B823F /* 08.jpg */; };
+		4C4078151DE578E8000B823F /* 09.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4C4077FD1DE578E8000B823F /* 09.jpg */; };
+		4C4078171DE596A5000B823F /* WCPhotoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C4078161DE596A5000B823F /* WCPhotoModel.swift */; };
 		4C4AC8281DDC565300F115CB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C4AC8271DDC565300F115CB /* AppDelegate.swift */; };
 		4C4AC82D1DDC565300F115CB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C4AC82B1DDC565300F115CB /* Main.storyboard */; };
 		4C4AC82F1DDC565300F115CB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C4AC82E1DDC565300F115CB /* Assets.xcassets */; };
@@ -123,13 +161,9 @@
 		4C4AC9271DDC6C1700F115CB /* WCHomeViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C4AC9251DDC6C1700F115CB /* WCHomeViewCell.xib */; };
 		4C4AC92F1DDD5D9800F115CB /* WCSearchResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C4AC92D1DDD5D9800F115CB /* WCSearchResultViewController.swift */; };
 		4C4AC9301DDD5D9800F115CB /* WCSearchResultViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C4AC92E1DDD5D9800F115CB /* WCSearchResultViewController.xib */; };
-		4C707F1D1DE2EB99005389FF /* WCFriendHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C707F1C1DE2EB99005389FF /* WCFriendHeaderView.swift */; };
-		4C707F1F1DE2EBAE005389FF /* WCFriendHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C707F1E1DE2EBAE005389FF /* WCFriendHeaderView.xib */; };
 		4C707F211DE2ECD8005389FF /* pbg.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4C707F201DE2ECD8005389FF /* pbg.jpg */; };
-		4C707F231DE2ED12005389FF /* 1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4C707F221DE2ED12005389FF /* 1.jpg */; };
+		4C707F231DE2ED12005389FF /* angel.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4C707F221DE2ED12005389FF /* angel.jpg */; };
 		4C707F251DE2F492005389FF /* activity.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C707F241DE2F492005389FF /* activity.png */; };
-		4C707F281DE44B45005389FF /* WCPhotosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C707F261DE44B45005389FF /* WCPhotosViewController.swift */; };
-		4C707F291DE44B45005389FF /* WCPhotosViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C707F271DE44B45005389FF /* WCPhotosViewController.xib */; };
 		4CCD8E4B1DDD960000EC2686 /* WCDiscoverContents.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4CCD8E4A1DDD960000EC2686 /* WCDiscoverContents.plist */; };
 		4CCD8E5D1DDDAD7E00EC2686 /* WCMessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CCD8E5B1DDDAD7E00EC2686 /* WCMessageViewController.swift */; };
 		4CCD8E5E1DDDAD7E00EC2686 /* WCMessageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4CCD8E5C1DDDAD7E00EC2686 /* WCMessageViewController.xib */; };
@@ -144,6 +178,44 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4C1993F51DE5A0EF009F6078 /* WCPublishViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WCPublishViewController.swift; sourceTree = "<group>"; };
+		4C1993F61DE5A0EF009F6078 /* WCPublishViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WCPublishViewController.xib; sourceTree = "<group>"; };
+		4C4077CA1DE56226000B823F /* WCFriendHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WCFriendHeaderView.swift; path = Friend/WCFriendHeaderView.swift; sourceTree = "<group>"; };
+		4C4077CB1DE56226000B823F /* WCFriendHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = WCFriendHeaderView.xib; path = Friend/WCFriendHeaderView.xib; sourceTree = "<group>"; };
+		4C4077D31DE5627E000B823F /* WCPhotosViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WCPhotosViewController.swift; sourceTree = "<group>"; };
+		4C4077D41DE5627E000B823F /* WCPhotosViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WCPhotosViewController.xib; sourceTree = "<group>"; };
+		4C4077D71DE562C7000B823F /* WCAlbumsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WCAlbumsViewController.swift; sourceTree = "<group>"; };
+		4C4077D81DE562C7000B823F /* WCAlbumsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WCAlbumsViewController.xib; sourceTree = "<group>"; };
+		4C4077DB1DE56DB6000B823F /* WCPhotoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WCPhotoCell.swift; sourceTree = "<group>"; };
+		4C4077DC1DE56DB6000B823F /* WCPhotoCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WCPhotoCell.xib; sourceTree = "<group>"; };
+		4C4077DF1DE56F4F000B823F /* checked.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = checked.png; sourceTree = "<group>"; };
+		4C4077E01DE56F4F000B823F /* unchecked.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = unchecked.png; sourceTree = "<group>"; };
+		4C4077E31DE5750D000B823F /* PictureCell.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = PictureCell.plist; sourceTree = "<group>"; };
+		4C4077E61DE578E8000B823F /* 00.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 00.jpg; sourceTree = "<group>"; };
+		4C4077E71DE578E8000B823F /* 01.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 01.jpg; sourceTree = "<group>"; };
+		4C4077E81DE578E8000B823F /* 10.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 10.jpg; sourceTree = "<group>"; };
+		4C4077E91DE578E8000B823F /* 11.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 11.jpg; sourceTree = "<group>"; };
+		4C4077EA1DE578E8000B823F /* 12.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 12.jpg; sourceTree = "<group>"; };
+		4C4077EB1DE578E8000B823F /* 13.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 13.jpg; sourceTree = "<group>"; };
+		4C4077EC1DE578E8000B823F /* 14.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 14.jpg; sourceTree = "<group>"; };
+		4C4077ED1DE578E8000B823F /* 15.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 15.jpg; sourceTree = "<group>"; };
+		4C4077EE1DE578E8000B823F /* 16.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 16.jpg; sourceTree = "<group>"; };
+		4C4077EF1DE578E8000B823F /* 17.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 17.jpg; sourceTree = "<group>"; };
+		4C4077F01DE578E8000B823F /* 18.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 18.jpg; sourceTree = "<group>"; };
+		4C4077F11DE578E8000B823F /* 19.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 19.jpg; sourceTree = "<group>"; };
+		4C4077F21DE578E8000B823F /* 02.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 02.jpg; sourceTree = "<group>"; };
+		4C4077F31DE578E8000B823F /* 20.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 20.jpg; sourceTree = "<group>"; };
+		4C4077F41DE578E8000B823F /* 21.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 21.jpg; sourceTree = "<group>"; };
+		4C4077F51DE578E8000B823F /* 22.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 22.jpg; sourceTree = "<group>"; };
+		4C4077F61DE578E8000B823F /* 23.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 23.jpg; sourceTree = "<group>"; };
+		4C4077F71DE578E8000B823F /* 03.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 03.jpg; sourceTree = "<group>"; };
+		4C4077F81DE578E8000B823F /* 04.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 04.jpg; sourceTree = "<group>"; };
+		4C4077F91DE578E8000B823F /* 05.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 05.jpg; sourceTree = "<group>"; };
+		4C4077FA1DE578E8000B823F /* 06.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 06.jpg; sourceTree = "<group>"; };
+		4C4077FB1DE578E8000B823F /* 07.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 07.jpg; sourceTree = "<group>"; };
+		4C4077FC1DE578E8000B823F /* 08.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 08.jpg; sourceTree = "<group>"; };
+		4C4077FD1DE578E8000B823F /* 09.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 09.jpg; sourceTree = "<group>"; };
+		4C4078161DE596A5000B823F /* WCPhotoModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WCPhotoModel.swift; sourceTree = "<group>"; };
 		4C4AC8241DDC565300F115CB /* WeChat_Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeChat_Swift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C4AC8271DDC565300F115CB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4C4AC82C1DDC565300F115CB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -262,13 +334,9 @@
 		4C4AC9251DDC6C1700F115CB /* WCHomeViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WCHomeViewCell.xib; sourceTree = "<group>"; };
 		4C4AC92D1DDD5D9800F115CB /* WCSearchResultViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WCSearchResultViewController.swift; sourceTree = "<group>"; };
 		4C4AC92E1DDD5D9800F115CB /* WCSearchResultViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WCSearchResultViewController.xib; sourceTree = "<group>"; };
-		4C707F1C1DE2EB99005389FF /* WCFriendHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WCFriendHeaderView.swift; sourceTree = "<group>"; };
-		4C707F1E1DE2EBAE005389FF /* WCFriendHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WCFriendHeaderView.xib; sourceTree = "<group>"; };
 		4C707F201DE2ECD8005389FF /* pbg.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pbg.jpg; sourceTree = "<group>"; };
-		4C707F221DE2ED12005389FF /* 1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1.jpg; sourceTree = "<group>"; };
+		4C707F221DE2ED12005389FF /* angel.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = angel.jpg; sourceTree = "<group>"; };
 		4C707F241DE2F492005389FF /* activity.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = activity.png; sourceTree = "<group>"; };
-		4C707F261DE44B45005389FF /* WCPhotosViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WCPhotosViewController.swift; sourceTree = "<group>"; };
-		4C707F271DE44B45005389FF /* WCPhotosViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WCPhotosViewController.xib; sourceTree = "<group>"; };
 		4CCD8E4A1DDD960000EC2686 /* WCDiscoverContents.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = WCDiscoverContents.plist; sourceTree = "<group>"; };
 		4CCD8E5B1DDDAD7E00EC2686 /* WCMessageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WCMessageViewController.swift; path = Message/WCMessageViewController.swift; sourceTree = "<group>"; };
 		4CCD8E5C1DDDAD7E00EC2686 /* WCMessageViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = WCMessageViewController.xib; path = Message/WCMessageViewController.xib; sourceTree = "<group>"; };
@@ -293,6 +361,63 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4C1993F41DE5A0C1009F6078 /* publish */ = {
+			isa = PBXGroup;
+			children = (
+				4C1993F51DE5A0EF009F6078 /* WCPublishViewController.swift */,
+				4C1993F61DE5A0EF009F6078 /* WCPublishViewController.xib */,
+			);
+			name = publish;
+			path = Friend/publish;
+			sourceTree = "<group>";
+		};
+		4C4077D21DE56237000B823F /* Album */ = {
+			isa = PBXGroup;
+			children = (
+				4C4077D71DE562C7000B823F /* WCAlbumsViewController.swift */,
+				4C4077D81DE562C7000B823F /* WCAlbumsViewController.xib */,
+				4C4077D31DE5627E000B823F /* WCPhotosViewController.swift */,
+				4C4077D41DE5627E000B823F /* WCPhotosViewController.xib */,
+				4C4077DB1DE56DB6000B823F /* WCPhotoCell.swift */,
+				4C4077DC1DE56DB6000B823F /* WCPhotoCell.xib */,
+				4C4077E31DE5750D000B823F /* PictureCell.plist */,
+				4C4078161DE596A5000B823F /* WCPhotoModel.swift */,
+			);
+			name = Album;
+			path = Friend/Album;
+			sourceTree = "<group>";
+		};
+		4C4077E51DE578DE000B823F /* CollectionPic */ = {
+			isa = PBXGroup;
+			children = (
+				4C4077E61DE578E8000B823F /* 00.jpg */,
+				4C4077E71DE578E8000B823F /* 01.jpg */,
+				4C4077E81DE578E8000B823F /* 10.jpg */,
+				4C4077E91DE578E8000B823F /* 11.jpg */,
+				4C4077EA1DE578E8000B823F /* 12.jpg */,
+				4C4077EB1DE578E8000B823F /* 13.jpg */,
+				4C4077EC1DE578E8000B823F /* 14.jpg */,
+				4C4077ED1DE578E8000B823F /* 15.jpg */,
+				4C4077EE1DE578E8000B823F /* 16.jpg */,
+				4C4077EF1DE578E8000B823F /* 17.jpg */,
+				4C4077F01DE578E8000B823F /* 18.jpg */,
+				4C4077F11DE578E8000B823F /* 19.jpg */,
+				4C4077F21DE578E8000B823F /* 02.jpg */,
+				4C4077F31DE578E8000B823F /* 20.jpg */,
+				4C4077F41DE578E8000B823F /* 21.jpg */,
+				4C4077F51DE578E8000B823F /* 22.jpg */,
+				4C4077F61DE578E8000B823F /* 23.jpg */,
+				4C4077F71DE578E8000B823F /* 03.jpg */,
+				4C4077F81DE578E8000B823F /* 04.jpg */,
+				4C4077F91DE578E8000B823F /* 05.jpg */,
+				4C4077FA1DE578E8000B823F /* 06.jpg */,
+				4C4077FB1DE578E8000B823F /* 07.jpg */,
+				4C4077FC1DE578E8000B823F /* 08.jpg */,
+				4C4077FD1DE578E8000B823F /* 09.jpg */,
+			);
+			path = CollectionPic;
+			sourceTree = "<group>";
+		};
 		4C4AC81B1DDC565300F115CB = {
 			isa = PBXGroup;
 			children = (
@@ -407,6 +532,7 @@
 		4C4AC8451DDC5A3000F115CB /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				4C4077E51DE578DE000B823F /* CollectionPic */,
 				4C4AC8461DDC5A3000F115CB /* Contact */,
 				4C4AC8471DDC5A3000F115CB /* Discover */,
 				4C4AC8481DDC5A3000F115CB /* Home */,
@@ -427,8 +553,10 @@
 		4C4AC8471DDC5A3000F115CB /* Discover */ = {
 			isa = PBXGroup;
 			children = (
+				4C4077DF1DE56F4F000B823F /* checked.png */,
+				4C4077E01DE56F4F000B823F /* unchecked.png */,
 				4C707F241DE2F492005389FF /* activity.png */,
-				4C707F221DE2ED12005389FF /* 1.jpg */,
+				4C707F221DE2ED12005389FF /* angel.jpg */,
 				4C707F201DE2ECD8005389FF /* pbg.jpg */,
 				4C4AC8541DDC5D7000F115CB /* Action_JD_mainMenu@2x.png */,
 				4C4AC8551DDC5D7000F115CB /* AlbumAddBtn@2x.png */,
@@ -577,10 +705,10 @@
 			children = (
 				4CCD8E631DDDADA000EC2686 /* WCFriendViewController.swift */,
 				4CCD8E641DDDADA000EC2686 /* WCFriendViewController.xib */,
-				4C707F1C1DE2EB99005389FF /* WCFriendHeaderView.swift */,
-				4C707F1E1DE2EBAE005389FF /* WCFriendHeaderView.xib */,
-				4C707F261DE44B45005389FF /* WCPhotosViewController.swift */,
-				4C707F271DE44B45005389FF /* WCPhotosViewController.xib */,
+				4C4077CA1DE56226000B823F /* WCFriendHeaderView.swift */,
+				4C4077CB1DE56226000B823F /* WCFriendHeaderView.xib */,
+				4C4077D21DE56237000B823F /* Album */,
+				4C1993F41DE5A0C1009F6078 /* publish */,
 			);
 			name = Friend;
 			sourceTree = "<group>";
@@ -663,14 +791,20 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4C707F231DE2ED12005389FF /* 1.jpg in Resources */,
+				4C707F231DE2ED12005389FF /* angel.jpg in Resources */,
+				4C4077D61DE5627E000B823F /* WCPhotosViewController.xib in Resources */,
 				4C4AC8EB1DDC5D8500F115CB /* MoreMyAlbum@2x.png in Resources */,
+				4C4077FE1DE578E8000B823F /* 00.jpg in Resources */,
 				4CCD8E661DDDADA000EC2686 /* WCFriendViewController.xib in Resources */,
+				4C4078011DE578E8000B823F /* 11.jpg in Resources */,
 				4C4AC8F41DDC5D8500F115CB /* MoreSetting@3x.png in Resources */,
 				4C4AC8AE1DDC5D7100F115CB /* ff_IconBottle@3x.png in Resources */,
+				4C4077CF1DE56226000B823F /* WCFriendHeaderView.xib in Resources */,
 				4C4AC8BF1DDC5D7100F115CB /* LikeCmtBg@3x.png in Resources */,
 				4C4AC8531DDC5D6300F115CB /* header_icon_add@2x.png in Resources */,
 				4C4AC8BD1DDC5D7100F115CB /* Like@3x.png in Resources */,
+				4C4077DE1DE56DB6000B823F /* WCPhotoCell.xib in Resources */,
+				4C4078031DE578E8000B823F /* 13.jpg in Resources */,
 				4C4AC8C01DDC5D7100F115CB /* MoreGame.png in Resources */,
 				4C4AC8F11DDC5D8500F115CB /* MoreMyFavorites@2x.png in Resources */,
 				4C4AC8BB1DDC5D7100F115CB /* FootStep@2x.png in Resources */,
@@ -680,43 +814,56 @@
 				4CCD8E6A1DDDADB900EC2686 /* WCQRCodeViewController.xib in Resources */,
 				4C4AC8E61DDC5D8500F115CB /* barbuttonicon_set@3x.png in Resources */,
 				4C4AC8E51DDC5D8500F115CB /* barbuttonicon_set@2x.png in Resources */,
+				4C40780F1DE578E8000B823F /* 03.jpg in Resources */,
 				4C4AC89A1DDC5D7100F115CB /* AlbumOperateMoreHL@3x.png in Resources */,
 				4C4AC8AC1DDC5D7100F115CB /* ff_IconBottle.png in Resources */,
-				4C707F291DE44B45005389FF /* WCPhotosViewController.xib in Resources */,
 				4C4AC8321DDC565300F115CB /* LaunchScreen.storyboard in Resources */,
 				4C4AC8C91DDC5D7100F115CB /* Shake_Line_Down@2x.png in Resources */,
+				4C4078001DE578E8000B823F /* 10.jpg in Resources */,
+				4C1993F81DE5A0EF009F6078 /* WCPublishViewController.xib in Resources */,
 				4C4AC8B71DDC5D7100F115CB /* ff_IconShake@3x.png in Resources */,
+				4C4078071DE578E8000B823F /* 17.jpg in Resources */,
 				4C4AC89C1DDC5D7100F115CB /* AlbumReflashIcon@2x.png in Resources */,
 				4CCD8E621DDDAD8B00EC2686 /* WCUserInfoViewController.xib in Resources */,
-				4C707F1F1DE2EBAE005389FF /* WCFriendHeaderView.xib in Resources */,
 				4C4AC8C81DDC5D7100F115CB /* Shake_icon_tvHL@2x.png in Resources */,
 				4C4AC8E71DDC5D8500F115CB /* MoreExpressionShops.png in Resources */,
 				4C4AC8C31DDC5D7100F115CB /* Shake_icon_music@2x.png in Resources */,
+				4C40780D1DE578E8000B823F /* 22.jpg in Resources */,
+				4C40780B1DE578E8000B823F /* 20.jpg in Resources */,
 				4C4AC89F1DDC5D7100F115CB /* bottleBoard.png in Resources */,
+				4C4078151DE578E8000B823F /* 09.jpg in Resources */,
+				4C4078051DE578E8000B823F /* 15.jpg in Resources */,
 				4C4AC8A81DDC5D7100F115CB /* bottleRecord@2x.png in Resources */,
 				4C4AC8AD1DDC5D7100F115CB /* ff_IconBottle@2x.png in Resources */,
 				4C4AC8911DDC5D7100F115CB /* Action_JD_mainMenu@2x.png in Resources */,
 				4C4AC8B61DDC5D7100F115CB /* ff_IconShake@2x.png in Resources */,
+				4C4077E41DE5750D000B823F /* PictureCell.plist in Resources */,
+				4C4078101DE578E8000B823F /* 04.jpg in Resources */,
 				4C4AC8A91DDC5D7100F115CB /* Camera@2x.png in Resources */,
 				4C4AC8F81DDC5D8500F115CB /* ProfileLockOn@3x.png in Resources */,
 				4C4AC82F1DDC565300F115CB /* Assets.xcassets in Resources */,
 				4C4AC9021DDC5D9E00F115CB /* tabbar_contacts@2x.png in Resources */,
 				4C4AC9191DDC636100F115CB /* WCDiscoverViewController.xib in Resources */,
 				4C4AC9081DDC5D9E00F115CB /* tabbar_me@2x.png in Resources */,
+				4C40780E1DE578E8000B823F /* 23.jpg in Resources */,
 				4C4AC8BA1DDC5D7100F115CB /* ff_IconShowAlbum@3x.png in Resources */,
 				4C4AC8961DDC5D7100F115CB /* AlbumLike@3x.png in Resources */,
+				4C4077E21DE56F4F000B823F /* unchecked.png in Resources */,
 				4C4AC8BE1DDC5D7100F115CB /* LikeCmtBg@2x.png in Resources */,
 				4C4AC8AA1DDC5D7100F115CB /* Camera@3x.png in Resources */,
 				4C4AC8A11DDC5D7100F115CB /* bottleButtonFish.png in Resources */,
 				4C4AC9071DDC5D9E00F115CB /* tabbar_mainframeHL@2x.png in Resources */,
 				4C4AC8F31DDC5D8500F115CB /* MoreSetting@2x.png in Resources */,
 				4C4AC8F21DDC5D8500F115CB /* MoreMyFavorites@3x.png in Resources */,
+				4C4077E11DE56F4F000B823F /* checked.png in Resources */,
 				4C4AC8B31DDC5D7100F115CB /* ff_IconQRCode@2x.png in Resources */,
 				4C4AC9301DDD5D9800F115CB /* WCSearchResultViewController.xib in Resources */,
 				4C4AC8B11DDC5D7100F115CB /* ff_IconLocationService@3x.png in Resources */,
 				4C4AC8C71DDC5D7100F115CB /* Shake_icon_tv@2x.png in Resources */,
+				4C4078041DE578E8000B823F /* 14.jpg in Resources */,
 				4C4AC8F91DDC5D8500F115CB /* xhr.png in Resources */,
 				4C4AC9041DDC5D9E00F115CB /* tabbar_discover@2x.png in Resources */,
+				4C4078091DE578E8000B823F /* 19.jpg in Resources */,
 				4C4AC8A51DDC5D7100F115CB /* bottleButtonThrow.png in Resources */,
 				4C4AC8991DDC5D7100F115CB /* AlbumOperateMoreHL@2x.png in Resources */,
 				4C4AC9111DDC62F000F115CB /* WCHomeViewController.xib in Resources */,
@@ -724,13 +871,17 @@
 				4C4AC8EA1DDC5D8500F115CB /* MoreMyAlbum.png in Resources */,
 				4CCD8E4B1DDD960000EC2686 /* WCDiscoverContents.plist in Resources */,
 				4C4AC8A31DDC5D7100F115CB /* bottleButtonMine.png in Resources */,
+				4C4078141DE578E8000B823F /* 08.jpg in Resources */,
 				4C4AC8B41DDC5D7100F115CB /* ff_IconQRCode@3x.png in Resources */,
 				4C4AC8C51DDC5D7100F115CB /* Shake_icon_people@2x.png in Resources */,
 				4C4AC8AF1DDC5D7100F115CB /* ff_IconLocationService.png in Resources */,
+				4C4077FF1DE578E8000B823F /* 01.jpg in Resources */,
 				4C4AC8A41DDC5D7100F115CB /* bottleButtonMine@2x.png in Resources */,
 				4C4AC8CB1DDC5D7100F115CB /* Shake_Logo_Down@2x.png in Resources */,
 				4C4AC8C21DDC5D7100F115CB /* MoreGame@3x.png in Resources */,
 				4CCD8E5E1DDDAD7E00EC2686 /* WCMessageViewController.xib in Resources */,
+				4C4077DA1DE562C7000B823F /* WCAlbumsViewController.xib in Resources */,
+				4C4078131DE578E8000B823F /* 07.jpg in Resources */,
 				4C4AC91D1DDC637000F115CB /* WCMyViewController.xib in Resources */,
 				4C4AC89B1DDC5D7100F115CB /* AlbumOperateMoreViewBkg@2x.png in Resources */,
 				4C4AC8B51DDC5D7100F115CB /* ff_IconShake.png in Resources */,
@@ -755,24 +906,31 @@
 				4CCD8E6E1DDDADC900EC2686 /* WCShakeViewController.xib in Resources */,
 				4C4AC9061DDC5D9E00F115CB /* tabbar_mainframe@2x.png in Resources */,
 				4C4AC8A71DDC5D7100F115CB /* bottleNightBkg@2x.jpg in Resources */,
+				4C4078111DE578E8000B823F /* 05.jpg in Resources */,
 				4C4AC8981DDC5D7100F115CB /* AlbumOperateMore@3x.png in Resources */,
+				4C4078121DE578E8000B823F /* 06.jpg in Resources */,
 				4C4AC9271DDC6C1700F115CB /* WCHomeViewCell.xib in Resources */,
 				4C4AC89D1DDC5D7100F115CB /* bottleBkg@2x.jpg in Resources */,
 				4C4AC8F51DDC5D8500F115CB /* my.png in Resources */,
 				4C4AC8971DDC5D7100F115CB /* AlbumOperateMore@2x.png in Resources */,
 				4C4AC8F61DDC5D8500F115CB /* MyCardPackageIcon@2x.png in Resources */,
 				4C4AC8EE1DDC5D8500F115CB /* MoreMyBankCard@2x.png in Resources */,
+				4C40780A1DE578E8000B823F /* 02.jpg in Resources */,
+				4C4078061DE578E8000B823F /* 16.jpg in Resources */,
+				4C4078081DE578E8000B823F /* 18.jpg in Resources */,
 				4C4AC8A01DDC5D7100F115CB /* bottleBoard@2x.png in Resources */,
 				4C4AC8AB1DDC5D7100F115CB /* CreditCard_ShoppingBag@2x.png in Resources */,
 				4C4AC8F01DDC5D8500F115CB /* MoreMyFavorites.png in Resources */,
 				4C4AC8B01DDC5D7100F115CB /* ff_IconLocationService@2x.png in Resources */,
 				4C4AC89E1DDC5D7100F115CB /* bottleBkgSpotLight@2x.png in Resources */,
 				4C4AC8A21DDC5D7100F115CB /* bottleButtonFish@2x.png in Resources */,
+				4C40780C1DE578E8000B823F /* 21.jpg in Resources */,
 				4C4AC8BC1DDC5D7100F115CB /* Like@2x.png in Resources */,
 				4C4AC8B21DDC5D7100F115CB /* ff_IconQRCode.png in Resources */,
 				4C4AC90B1DDC5E1000F115CB /* Dimensional-_Code_Bg@2x.png in Resources */,
 				4C4AC8921DDC5D7100F115CB /* AlbumAddBtn@2x.png in Resources */,
 				4C4AC8EF1DDC5D8500F115CB /* MoreMyBankCard@3x.png in Resources */,
+				4C4078021DE578E8000B823F /* 12.jpg in Resources */,
 				4C4AC8C11DDC5D7100F115CB /* MoreGame@2x.png in Resources */,
 				4C4AC8C61DDC5D7100F115CB /* Shake_icon_peopleHL@2x.png in Resources */,
 				4C4AC9031DDC5D9E00F115CB /* tabbar_contactsHL@2x.png in Resources */,
@@ -788,19 +946,23 @@
 			files = (
 				4C4AC91F1DDC638D00F115CB /* WCContactNavController.swift in Sources */,
 				4CCD8E691DDDADB900EC2686 /* WCQRCodeViewController.swift in Sources */,
+				4C4078171DE596A5000B823F /* WCPhotoModel.swift in Sources */,
 				4C4AC84F1DDC5BA100F115CB /* WCBaseTabBarController.swift in Sources */,
 				4C4AC91C1DDC637000F115CB /* WCMyViewController.swift in Sources */,
 				4C4AC9231DDC63B900F115CB /* WCMyNavController.swift in Sources */,
-				4C707F1D1DE2EB99005389FF /* WCFriendHeaderView.swift in Sources */,
 				4C4AC92F1DDD5D9800F115CB /* WCSearchResultViewController.swift in Sources */,
 				4C4AC9181DDC636100F115CB /* WCDiscoverViewController.swift in Sources */,
 				4C4AC9101DDC62F000F115CB /* WCHomeViewController.swift in Sources */,
+				4C4077D51DE5627E000B823F /* WCPhotosViewController.swift in Sources */,
 				4C4AC8511DDC5BB900F115CB /* WCBaseViewController.swift in Sources */,
-				4C707F281DE44B45005389FF /* WCPhotosViewController.swift in Sources */,
 				4C4AC84D1DDC5B7F00F115CB /* WCBaseNavController.swift in Sources */,
+				4C1993F71DE5A0EF009F6078 /* WCPublishViewController.swift in Sources */,
 				4CCD8E651DDDADA000EC2686 /* WCFriendViewController.swift in Sources */,
+				4C4077D91DE562C7000B823F /* WCAlbumsViewController.swift in Sources */,
 				4C4AC8281DDC565300F115CB /* AppDelegate.swift in Sources */,
+				4C4077DD1DE56DB6000B823F /* WCPhotoCell.swift in Sources */,
 				4C4AC9211DDC63A100F115CB /* WCDiscoverNavController.swift in Sources */,
+				4C4077CE1DE56226000B823F /* WCFriendHeaderView.swift in Sources */,
 				4C4AC9261DDC6C1700F115CB /* WCHomeViewCell.swift in Sources */,
 				4C4AC90D1DDC62D600F115CB /* WCHomeNavController.swift in Sources */,
 				4CCD8E611DDDAD8B00EC2686 /* WCUserInfoViewController.swift in Sources */,

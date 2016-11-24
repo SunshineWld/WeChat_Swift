@@ -23,7 +23,7 @@
                         <constraint firstAttribute="height" constant="60" id="EkN-uu-YqR"/>
                         <constraint firstAttribute="width" constant="60" id="tN3-JP-g2m"/>
                     </constraints>
-                    <state key="normal" backgroundImage="1.jpg"/>
+                    <state key="normal" backgroundImage="angel.jpg"/>
                     <connections>
                         <action selector="headButtonAction:" destination="eU3-K8-kk5" eventType="touchUpInside" id="gvJ-pX-Afs"/>
                     </connections>
@@ -55,7 +55,7 @@
         </view>
     </objects>
     <resources>
-        <image name="1.jpg" width="638" height="640"/>
+        <image name="angel.jpg" width="638" height="640"/>
         <image name="pbg.jpg" width="1280" height="720"/>
     </resources>
 </document>
