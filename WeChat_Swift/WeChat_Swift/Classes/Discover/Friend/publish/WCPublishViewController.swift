@@ -20,6 +20,7 @@ class WCPublishViewController: WCBaseViewController, UITableViewDelegate, UITabl
         self.setupNavigationItem()
         self.setupTableView()
         
+        
     }
     func setupNavigationItem() {
         let cancelButtonItem = UIBarButtonItem.init(title: "取消", style: UIBarButtonItemStyle.plain, target: self, action: #selector(sendItem))
@@ -58,7 +59,7 @@ class WCPublishViewController: WCBaseViewController, UITableViewDelegate, UITabl
         return cell!
     }
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-        return 1
+        return 0
     }
     func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
         return 19

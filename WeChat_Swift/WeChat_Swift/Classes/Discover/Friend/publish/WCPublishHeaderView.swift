@@ -83,6 +83,12 @@ class WCPublishHeaderView: UIView, UICollectionViewDelegate, UICollectionViewDat
         
         return cell
     }
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        if imageArray[indexPath.item] == "AlbumAddBtn" {
+            print("添加照片")
+            
+        }
+    }
     
     //MARK: UITextViewDelegate
     func textViewDidBeginEditing(_ textView: UITextView) {
