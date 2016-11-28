@@ -1,0 +1,14 @@
+//
+//  WeChat-Prefix.pch
+//  WeChat_Swift
+//
+//  Created by wanglidan on 16/11/28.
+//  Copyright © 2016年 wanglidan. All rights reserved.
+//
+
+#ifndef WeChat_Prefix_pch
+#define WeChat_Prefix_pch
+
+#define kTestPch "测试pch"
+
+#endif /* WeChat_Prefix_pch */

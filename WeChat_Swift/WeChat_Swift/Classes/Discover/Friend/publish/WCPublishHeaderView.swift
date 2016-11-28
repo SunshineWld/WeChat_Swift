@@ -47,22 +47,6 @@ class WCPublishHeaderView: UIView, UICollectionViewDelegate, UICollectionViewDat
         self.frame.size.height = 108+10+10+imgCollectionView.frame.size.height
     }
     
-//    func heightForHeadView() -> CGFloat {
-//        var row: CGFloat = 0
-//        if self.imageArray.count > 8 {
-//            row = 3
-//        }else if self.imageArray.count > 4 {
-//            row = 2
-//        }else {
-//            row = 1
-//        }
-//        
-//        imgCollectionView.frame.size.height = itemWidth*row + (row-1)*(space+1)
-//        self.frame.size.height = 108+10+10+imgCollectionView.frame.size.height
-//        
-//        return self.frame.size.height
-//    }
-    
     override func awakeFromNib() {
         super.awakeFromNib()
         

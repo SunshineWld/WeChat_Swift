@@ -19,6 +19,8 @@ class WCFriendViewController: WCBaseViewController,UITableViewDelegate, UITableV
     var dragging: Bool = false
     var num: Int = 0
     var currentY: Float = 0.0
+    
+    var dataSource = [String]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,11 +34,22 @@ class WCFriendViewController: WCBaseViewController,UITableViewDelegate, UITableV
         tableView.backgroundColor = UIColor.black
         tableView.delegate = self;
         tableView.dataSource = self;
+        tableView.contentInset = UIEdgeInsetsMake(-100, 0, 0, 0)
         
         headerView = Bundle.main.loadNibNamed("WCFriendHeaderView", owner: self, options: nil)?.last as! WCFriendHeaderView
         tableView.tableHeaderView = headerView
         
+        for i in 0..<10 {
+            let string = "第\(i)行"
+            dataSource.append(string)
+        }
+        
 //        self.setupActivityView()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.tableView.reloadData()
     }
     
     func setupActivityView() {
@@ -51,10 +64,10 @@ class WCFriendViewController: WCBaseViewController,UITableViewDelegate, UITableV
         containerView.backgroundColor = UIColor.orange
         containerView.addSubview(activityView)
        
-        tableView.contentInset = UIEdgeInsetsMake(-150, 0, 0, 0)
+//        tableView.contentInset = UIEdgeInsetsMake(-150, 0, 0, 0)
         self.view.addSubview(containerView)
     }
-    
+ 
     //MARK:Action
     func cameraAction() {
         let actionSheet = UIAlertController.init(title: nil, message: nil, preferredStyle: UIAlertControllerStyle.actionSheet)
@@ -77,46 +90,44 @@ class WCFriendViewController: WCBaseViewController,UITableViewDelegate, UITableV
 
     //MARK:UITableViewDelegate
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 20;
+        return dataSource.count;
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         var cell = tableView.dequeueReusableCell(withIdentifier: "cell")
         if cell == nil {
             cell = UITableViewCell(style: UITableViewCellStyle.default, reuseIdentifier: "cell")
         }
-        cell?.textLabel?.text = "第\(indexPath.row)行"
+        cell?.textLabel?.text = dataSource[indexPath.row]
         return cell!
     }
     
     //MARK:UIScrollViewDegelate
-    func scrollViewWillBeginDragging(_ scrollView: UIScrollView) {
-        dragging = true
-    }
-    func scrollViewDidScroll(_ scrollView: UIScrollView) {
-        if num == 0 {
-            num += 1
-            return
-        }
-        let offsetY = scrollView.contentOffset.y
-        let angle = -offsetY * CGFloat(M_PI) / 30
-        if dragging {
-            if offsetY <= 110 {
-                containerView.frame.origin.y = 10 + offsetY
-            }
-        }else {
-            if currentY < 120 {
-                containerView.frame.origin.y = 10 + offsetY
-            }
-        }
-        activityView.transform = CGAffineTransform.init(rotationAngle: angle)
-    }
-    
-    func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
-        UIView.animate(withDuration: 0.25) { 
-            self.containerView.frame = CGRect(x: 15, y: 120, width: 30, height: 30)
-            self.activityView.transform = CGAffineTransform.init(rotationAngle: 2*CGFloat(M_PI))
-        }
-    }
-
-    
+//    func scrollViewWillBeginDragging(_ scrollView: UIScrollView) {
+//        dragging = true
+//    }
+//    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+//        if num == 0 {
+//            num += 1
+//            return
+//        }
+//        let offsetY = scrollView.contentOffset.y
+//        let angle = -offsetY * CGFloat(M_PI) / 30
+//        if dragging {
+//            if offsetY <= 110 {
+//                containerView.frame.origin.y = 10 + offsetY
+//            }
+//        }else {
+//            if currentY < 120 {
+//                containerView.frame.origin.y = 10 + offsetY
+//            }
+//        }
+//        activityView.transform = CGAffineTransform.init(rotationAngle: angle)
+//    }
+//    
+//    func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
+//        UIView.animate(withDuration: 0.25) { 
+//            self.containerView.frame = CGRect(x: 15, y: 120, width: 30, height: 30)
+//            self.activityView.transform = CGAffineTransform.init(rotationAngle: 2*CGFloat(M_PI))
+//        }
+//    }
 }
