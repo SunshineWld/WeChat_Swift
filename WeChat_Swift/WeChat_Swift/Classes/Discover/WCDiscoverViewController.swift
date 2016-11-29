@@ -24,7 +24,7 @@ class WCDiscoverViewController: WCBaseViewController, UITableViewDelegate, UITab
         
         let filePath = Bundle.main.path(forResource: "WCDiscoverContents", ofType: "plist")
         dataSource = NSArray(contentsOfFile: filePath!) as! [[[String : String]]]
-
+        
     }
     
     
