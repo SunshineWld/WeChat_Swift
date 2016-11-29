@@ -180,7 +180,6 @@
 		4CCD8E6D1DDDADC900EC2686 /* WCShakeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CCD8E6B1DDDADC900EC2686 /* WCShakeViewController.swift */; };
 		4CCD8E6E1DDDADC900EC2686 /* WCShakeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4CCD8E6C1DDDADC900EC2686 /* WCShakeViewController.xib */; };
 		4CD288E41DED31DC00E3D37A /* UIView+Addition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CD288E31DED31DC00E3D37A /* UIView+Addition.swift */; };
-		4CD288E91DED50BE00E3D37A /* UIView+AutoLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CD288E81DED50BE00E3D37A /* UIView+AutoLayout.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -359,8 +358,6 @@
 		4CCD8E6B1DDDADC900EC2686 /* WCShakeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WCShakeViewController.swift; path = Shake/WCShakeViewController.swift; sourceTree = "<group>"; };
 		4CCD8E6C1DDDADC900EC2686 /* WCShakeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = WCShakeViewController.xib; path = Shake/WCShakeViewController.xib; sourceTree = "<group>"; };
 		4CD288E31DED31DC00E3D37A /* UIView+Addition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Addition.swift"; sourceTree = "<group>"; };
-		4CD288E71DED50BE00E3D37A /* UIView+AutoLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+AutoLayout.h"; sourceTree = "<group>"; };
-		4CD288E81DED50BE00E3D37A /* UIView+AutoLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+AutoLayout.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -777,8 +774,6 @@
 			isa = PBXGroup;
 			children = (
 				4CD288E31DED31DC00E3D37A /* UIView+Addition.swift */,
-				4CD288E71DED50BE00E3D37A /* UIView+AutoLayout.h */,
-				4CD288E81DED50BE00E3D37A /* UIView+AutoLayout.m */,
 			);
 			name = Extension;
 			sourceTree = "<group>";
@@ -1022,7 +1017,6 @@
 				4C4AC9261DDC6C1700F115CB /* WCHomeViewCell.swift in Sources */,
 				4C4AC90D1DDC62D600F115CB /* WCHomeNavController.swift in Sources */,
 				4CCD8E611DDDAD8B00EC2686 /* WCUserInfoViewController.swift in Sources */,
-				4CD288E91DED50BE00E3D37A /* UIView+AutoLayout.m in Sources */,
 				4CCD8E5D1DDDAD7E00EC2686 /* WCMessageViewController.swift in Sources */,
 				4C4AC9141DDC634B00F115CB /* WCContactViewController.swift in Sources */,
 				4CCD8E6D1DDDADC900EC2686 /* WCShakeViewController.swift in Sources */,
