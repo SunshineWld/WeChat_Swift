@@ -72,14 +72,12 @@ class WCFriendViewController: WCBaseViewController,UITableViewDelegate, UITableV
     func cameraAction() {
         let actionSheet = UIAlertController.init(title: nil, message: nil, preferredStyle: UIAlertControllerStyle.actionSheet)
         let photos = UIAlertAction.init(title: "相册", style: UIAlertActionStyle.default) { (alertAction) in
-            print(alertAction.title)
             
             let discoverNav = WCBaseNavController(rootViewController: WCAlbumsViewController())
             self.present(discoverNav, animated: true, completion: nil)
             
         }
         let cancel = UIAlertAction.init(title: "取消", style: UIAlertActionStyle.cancel) { (alertAction) in
-            print(alertAction.title)
         }
         
         actionSheet.addAction(photos)

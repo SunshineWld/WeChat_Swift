@@ -47,6 +47,7 @@
 		4C4078141DE578E8000B823F /* 08.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4C4077FC1DE578E8000B823F /* 08.jpg */; };
 		4C4078151DE578E8000B823F /* 09.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4C4077FD1DE578E8000B823F /* 09.jpg */; };
 		4C4078171DE596A5000B823F /* WCPhotoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C4078161DE596A5000B823F /* WCPhotoModel.swift */; };
+		4C4248FA1DEC2EF1007345FE /* WCAlertSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C4248F91DEC2EF1007345FE /* WCAlertSheet.swift */; };
 		4C4AC8281DDC565300F115CB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C4AC8271DDC565300F115CB /* AppDelegate.swift */; };
 		4C4AC82D1DDC565300F115CB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C4AC82B1DDC565300F115CB /* Main.storyboard */; };
 		4C4AC82F1DDC565300F115CB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C4AC82E1DDC565300F115CB /* Assets.xcassets */; };
@@ -178,6 +179,7 @@
 		4CCD8E6A1DDDADB900EC2686 /* WCQRCodeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4CCD8E681DDDADB900EC2686 /* WCQRCodeViewController.xib */; };
 		4CCD8E6D1DDDADC900EC2686 /* WCShakeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CCD8E6B1DDDADC900EC2686 /* WCShakeViewController.swift */; };
 		4CCD8E6E1DDDADC900EC2686 /* WCShakeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4CCD8E6C1DDDADC900EC2686 /* WCShakeViewController.xib */; };
+		4CD288E41DED31DC00E3D37A /* UIView+Addition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CD288E31DED31DC00E3D37A /* UIView+Addition.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -221,6 +223,7 @@
 		4C4077FC1DE578E8000B823F /* 08.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 08.jpg; sourceTree = "<group>"; };
 		4C4077FD1DE578E8000B823F /* 09.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 09.jpg; sourceTree = "<group>"; };
 		4C4078161DE596A5000B823F /* WCPhotoModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WCPhotoModel.swift; sourceTree = "<group>"; };
+		4C4248F91DEC2EF1007345FE /* WCAlertSheet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WCAlertSheet.swift; sourceTree = "<group>"; };
 		4C4AC8241DDC565300F115CB /* WeChat_Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeChat_Swift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C4AC8271DDC565300F115CB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4C4AC82C1DDC565300F115CB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -355,6 +358,7 @@
 		4CCD8E681DDDADB900EC2686 /* WCQRCodeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = WCQRCodeViewController.xib; path = QRCode/WCQRCodeViewController.xib; sourceTree = "<group>"; };
 		4CCD8E6B1DDDADC900EC2686 /* WCShakeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WCShakeViewController.swift; path = Shake/WCShakeViewController.swift; sourceTree = "<group>"; };
 		4CCD8E6C1DDDADC900EC2686 /* WCShakeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = WCShakeViewController.xib; path = Shake/WCShakeViewController.xib; sourceTree = "<group>"; };
+		4CD288E31DED31DC00E3D37A /* UIView+Addition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Addition.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -427,6 +431,23 @@
 			path = CollectionPic;
 			sourceTree = "<group>";
 		};
+		4C4248F71DEC2EB6007345FE /* WCCommon */ = {
+			isa = PBXGroup;
+			children = (
+				4CD288DC1DED2C4500E3D37A /* Extension */,
+				4C4248F81DEC2EC7007345FE /* WCAlertController */,
+			);
+			name = WCCommon;
+			sourceTree = "<group>";
+		};
+		4C4248F81DEC2EC7007345FE /* WCAlertController */ = {
+			isa = PBXGroup;
+			children = (
+				4C4248F91DEC2EF1007345FE /* WCAlertSheet.swift */,
+			);
+			name = WCAlertController;
+			sourceTree = "<group>";
+		};
 		4C4AC81B1DDC565300F115CB = {
 			isa = PBXGroup;
 			children = (
@@ -463,6 +484,7 @@
 		4C4AC83E1DDC5A3000F115CB /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				4C4248F71DEC2EB6007345FE /* WCCommon */,
 				4C4AC8421DDC5A3000F115CB /* Main */,
 				4C4AC8411DDC5A3000F115CB /* Home */,
 				4C4AC83F1DDC5A3000F115CB /* Contact */,
@@ -750,6 +772,14 @@
 			name = Shake;
 			sourceTree = "<group>";
 		};
+		4CD288DC1DED2C4500E3D37A /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				4CD288E31DED31DC00E3D37A /* UIView+Addition.swift */,
+			);
+			name = Extension;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -980,10 +1010,12 @@
 				4C1993F71DE5A0EF009F6078 /* WCPublishViewController.swift in Sources */,
 				4CCD8E651DDDADA000EC2686 /* WCFriendViewController.swift in Sources */,
 				4C4077D91DE562C7000B823F /* WCAlbumsViewController.swift in Sources */,
+				4C4248FA1DEC2EF1007345FE /* WCAlertSheet.swift in Sources */,
 				4C4AC8281DDC565300F115CB /* AppDelegate.swift in Sources */,
 				4C4077DD1DE56DB6000B823F /* WCPhotoCell.swift in Sources */,
 				4C4AC9211DDC63A100F115CB /* WCDiscoverNavController.swift in Sources */,
 				4C4077CE1DE56226000B823F /* WCFriendHeaderView.swift in Sources */,
+				4CD288E41DED31DC00E3D37A /* UIView+Addition.swift in Sources */,
 				4C4AC9261DDC6C1700F115CB /* WCHomeViewCell.swift in Sources */,
 				4C4AC90D1DDC62D600F115CB /* WCHomeNavController.swift in Sources */,
 				4CCD8E611DDDAD8B00EC2686 /* WCUserInfoViewController.swift in Sources */,
