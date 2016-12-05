@@ -8,6 +8,9 @@
 
 import UIKit
 
+let KeyboardAnimationDuration = 0.25
+
+let SCREEN_BOUNDS = UIScreen.main.bounds
 let SCREEN_WIDTH = UIScreen.main.bounds.size.width
 let SCREEN_HEIGHT = UIScreen.main.bounds.size.height
 let SCREEN_MAX_LENGTH = max(SCREEN_WIDTH, SCREEN_HEIGHT)

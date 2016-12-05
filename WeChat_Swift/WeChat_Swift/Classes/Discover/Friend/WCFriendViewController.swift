@@ -70,20 +70,33 @@ class WCFriendViewController: WCBaseViewController,UITableViewDelegate, UITableV
  
     //MARK:Action
     func cameraAction() {
-        let actionSheet = UIAlertController.init(title: nil, message: nil, preferredStyle: UIAlertControllerStyle.actionSheet)
-        let photos = UIAlertAction.init(title: "相册", style: UIAlertActionStyle.default) { (alertAction) in
-            
-            let discoverNav = WCBaseNavController(rootViewController: WCAlbumsViewController())
-            self.present(discoverNav, animated: true, completion: nil)
-            
-        }
-        let cancel = UIAlertAction.init(title: "取消", style: UIAlertActionStyle.cancel) { (alertAction) in
-        }
+//        let actionSheet = UIAlertController.init(title: nil, message: nil, preferredStyle: UIAlertControllerStyle.actionSheet)
+//        let photos = UIAlertAction.init(title: "相册", style: UIAlertActionStyle.default) { (alertAction) in
+//            let discoverNav = WCBaseNavController(rootViewController: WCAlbumsViewController())
+//            self.present(discoverNav, animated: true, completion: nil)
+//        }
+//        let cancel = UIAlertAction.init(title: "取消", style: UIAlertActionStyle.cancel) { (alertAction) in
+//        }
+//        actionSheet.addAction(photos)
+//        actionSheet.addAction(cancel)
+//        self.present(actionSheet, animated: true, completion: nil)
         
-        actionSheet.addAction(photos)
-        actionSheet.addAction(cancel)
+        let actionSheet = WCAlertSheet.initWithCancelButtonTitle(cancelButtonTitle: "取消", otherButtonTitleArray: ["小视频","拍照","从相册中选择"])
+        actionSheet.showWithCompletionBlock { (index) in
         
-        self.present(actionSheet, animated: true, completion: nil)
+            switch index {
+            case 0:
+                print("取消")
+            case 1:
+                print("小视频")
+            case 2:
+                print("拍照")
+            case 3:
+                print("相册")
+            default:
+                break
+           }
+        }
     }
 
     //MARK:UITableViewDelegate
