@@ -11,6 +11,7 @@
 		4C1993F81DE5A0EF009F6078 /* WCPublishViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C1993F61DE5A0EF009F6078 /* WCPublishViewController.xib */; };
 		4C1993FA1DE68CF1009F6078 /* WCPublishHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1993F91DE68CF1009F6078 /* WCPublishHeaderView.swift */; };
 		4C1993FC1DE68D07009F6078 /* WCPublishHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C1993FB1DE68D07009F6078 /* WCPublishHeaderView.xib */; };
+		4C1A87AA1DF6A6A5007CBE50 /* String+Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1A87A91DF6A6A5007CBE50 /* String+Common.swift */; };
 		4C4077CE1DE56226000B823F /* WCFriendHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C4077CA1DE56226000B823F /* WCFriendHeaderView.swift */; };
 		4C4077CF1DE56226000B823F /* WCFriendHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C4077CB1DE56226000B823F /* WCFriendHeaderView.xib */; };
 		4C4077D51DE5627E000B823F /* WCPhotosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C4077D31DE5627E000B823F /* WCPhotosViewController.swift */; };
@@ -182,6 +183,8 @@
 		4CD288E41DED31DC00E3D37A /* UIView+Addition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CD288E31DED31DC00E3D37A /* UIView+Addition.swift */; };
 		4CD288F51DED5A9E00E3D37A /* UIView+AutoLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CD288F41DED5A9E00E3D37A /* UIView+AutoLayout.m */; };
 		4CDFA2AD1DEED62B00A4AE92 /* WCAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CDFA2AC1DEED62B00A4AE92 /* WCAlertView.swift */; };
+		4CDFA2B21DF5355F00A4AE92 /* NSString+Common.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CDFA2AF1DF5355F00A4AE92 /* NSString+Common.m */; };
+		4CDFA2B31DF5355F00A4AE92 /* NSString+Emoji.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CDFA2B11DF5355F00A4AE92 /* NSString+Emoji.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -189,6 +192,7 @@
 		4C1993F61DE5A0EF009F6078 /* WCPublishViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WCPublishViewController.xib; sourceTree = "<group>"; };
 		4C1993F91DE68CF1009F6078 /* WCPublishHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WCPublishHeaderView.swift; sourceTree = "<group>"; };
 		4C1993FB1DE68D07009F6078 /* WCPublishHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WCPublishHeaderView.xib; sourceTree = "<group>"; };
+		4C1A87A91DF6A6A5007CBE50 /* String+Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Common.swift"; sourceTree = "<group>"; };
 		4C4077CA1DE56226000B823F /* WCFriendHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WCFriendHeaderView.swift; path = Friend/WCFriendHeaderView.swift; sourceTree = "<group>"; };
 		4C4077CB1DE56226000B823F /* WCFriendHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = WCFriendHeaderView.xib; path = Friend/WCFriendHeaderView.xib; sourceTree = "<group>"; };
 		4C4077D31DE5627E000B823F /* WCPhotosViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WCPhotosViewController.swift; sourceTree = "<group>"; };
@@ -364,6 +368,10 @@
 		4CD288F31DED5A9E00E3D37A /* UIView+AutoLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+AutoLayout.h"; sourceTree = "<group>"; };
 		4CD288F41DED5A9E00E3D37A /* UIView+AutoLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+AutoLayout.m"; sourceTree = "<group>"; };
 		4CDFA2AC1DEED62B00A4AE92 /* WCAlertView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WCAlertView.swift; sourceTree = "<group>"; };
+		4CDFA2AE1DF5355F00A4AE92 /* NSString+Common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Common.h"; sourceTree = "<group>"; };
+		4CDFA2AF1DF5355F00A4AE92 /* NSString+Common.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Common.m"; sourceTree = "<group>"; };
+		4CDFA2B01DF5355F00A4AE92 /* NSString+Emoji.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Emoji.h"; sourceTree = "<group>"; };
+		4CDFA2B11DF5355F00A4AE92 /* NSString+Emoji.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Emoji.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -783,6 +791,11 @@
 				4CD288E31DED31DC00E3D37A /* UIView+Addition.swift */,
 				4CD288F31DED5A9E00E3D37A /* UIView+AutoLayout.h */,
 				4CD288F41DED5A9E00E3D37A /* UIView+AutoLayout.m */,
+				4C1A87A91DF6A6A5007CBE50 /* String+Common.swift */,
+				4CDFA2AE1DF5355F00A4AE92 /* NSString+Common.h */,
+				4CDFA2AF1DF5355F00A4AE92 /* NSString+Common.m */,
+				4CDFA2B01DF5355F00A4AE92 /* NSString+Emoji.h */,
+				4CDFA2B11DF5355F00A4AE92 /* NSString+Emoji.m */,
 				4CD288EF1DED59DD00E3D37A /* WeChat_Swift-Bridging-Header.h */,
 			);
 			name = Extension;
@@ -1006,9 +1019,11 @@
 				4C4AC91F1DDC638D00F115CB /* WCContactNavController.swift in Sources */,
 				4CCD8E691DDDADB900EC2686 /* WCQRCodeViewController.swift in Sources */,
 				4C89AFD41DEBFDD700A94D45 /* WCConfig.swift in Sources */,
+				4CDFA2B31DF5355F00A4AE92 /* NSString+Emoji.m in Sources */,
 				4C4078171DE596A5000B823F /* WCPhotoModel.swift in Sources */,
 				4C4AC84F1DDC5BA100F115CB /* WCBaseTabBarController.swift in Sources */,
 				4C4AC91C1DDC637000F115CB /* WCMyViewController.swift in Sources */,
+				4C1A87AA1DF6A6A5007CBE50 /* String+Common.swift in Sources */,
 				4CD288F51DED5A9E00E3D37A /* UIView+AutoLayout.m in Sources */,
 				4C4AC9231DDC63B900F115CB /* WCMyNavController.swift in Sources */,
 				4C4AC92F1DDD5D9800F115CB /* WCSearchResultViewController.swift in Sources */,
@@ -1027,6 +1042,7 @@
 				4C4AC9211DDC63A100F115CB /* WCDiscoverNavController.swift in Sources */,
 				4C4077CE1DE56226000B823F /* WCFriendHeaderView.swift in Sources */,
 				4CD288E41DED31DC00E3D37A /* UIView+Addition.swift in Sources */,
+				4CDFA2B21DF5355F00A4AE92 /* NSString+Common.m in Sources */,
 				4C4AC9261DDC6C1700F115CB /* WCHomeViewCell.swift in Sources */,
 				4C4AC90D1DDC62D600F115CB /* WCHomeNavController.swift in Sources */,
 				4CCD8E611DDDAD8B00EC2686 /* WCUserInfoViewController.swift in Sources */,

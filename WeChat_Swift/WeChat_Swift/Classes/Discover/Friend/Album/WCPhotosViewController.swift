@@ -94,10 +94,15 @@ class WCPhotosViewController: WCBaseViewController, UICollectionViewDelegate, UI
     func photoCell(cell: WCPhotoCell, btn: UIButton) {
         
         if selectCell.count == 9 && !btn.isSelected{
-            let alertViewCtrl = UIAlertController(title: "", message: "你最多只能选择9张照片", preferredStyle: UIAlertControllerStyle.alert)
-            let action = UIAlertAction(title: "我知道了", style: UIAlertActionStyle.default, handler: nil)
-            alertViewCtrl.addAction(action)
-            self.present(alertViewCtrl, animated: true, completion: nil)
+//            let alertViewCtrl = UIAlertController(title: "", message: "你最多只能选择9张照片", preferredStyle: UIAlertControllerStyle.alert)
+//            let action = UIAlertAction(title: "我知道了", style: UIAlertActionStyle.default, handler: nil)
+//            alertViewCtrl.addAction(action)
+//            self.present(alertViewCtrl, animated: true, completion: nil)
+            
+            let alertView = WCAlertView.initWithTitle(title: "弹窗提示", message: "你最多只能选择9张照片", cancelButtonTitle: "我知道了")
+            alertView.showWithCompletionBlock(completionBlock: nil)
+            
+            
             return
         }
         btn.isSelected = !btn.isSelected

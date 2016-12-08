@@ -5,6 +5,9 @@
 
 
 #import "UIView+AutoLayout.h"
+#import "NSString+Common.h"
+#import "NSString+Emoji.h"
+
 
 
 

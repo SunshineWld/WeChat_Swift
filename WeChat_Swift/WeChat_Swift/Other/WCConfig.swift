@@ -36,6 +36,11 @@ let DocumentPath = NSSearchPathForDirectoriesInDomains(FileManager.SearchPathDir
 //获取自定义文件的bundle路径
 let ResourcePath = Bundle.main.resourcePath
 
+//通用色调的色值
+let KY_TINT_COLOR = HexColor(0xf9be00)   //纯黄色
+let KY_TINT_HIGHLIGHT_COLOR = HexColor(0xc89105)  //纯黄色  高亮效果
+
+
 //RGB进制颜色值
 func RGBCOLOR(_ r: CGFloat, _ g: CGFloat, _ b: CGFloat) -> UIColor {
     return UIColor(red: r/255.0, green: g/255.0, blue: b/255.0, alpha: 1.0)

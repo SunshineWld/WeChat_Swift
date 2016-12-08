@@ -63,7 +63,7 @@ class WCAlertSheet: UIView, UITableViewDelegate, UITableViewDataSource{
     var cancelButtonTitle: String!
     var dataSource = [String]()
     
-    var completeClosure: ((Int) -> Void)!
+    var completeClosure: ((Int) -> Void)?
     
     //自定义头部
     var header: UIView {
@@ -158,7 +158,9 @@ class WCAlertSheet: UIView, UITableViewDelegate, UITableViewDataSource{
     }
     
     func clickedIndex(index: Int) {
-        completeClosure(index)
+        if completeClosure != nil {
+            completeClosure!(index)
+        }
         
         let tableHeight = tableView.bounds.size.height
         UIView.animate(withDuration: 0.25, delay: 0, options: UIViewAnimationOptions.curveEaseInOut, animations: {
@@ -187,7 +189,7 @@ class WCAlertSheet: UIView, UITableViewDelegate, UITableViewDataSource{
         return alertSheet
     }
     
-    func showWithCompletionBlock(completionBlock:@escaping (_ buttonIndex: Int) -> Void) {
+    func showWithCompletionBlock(completionBlock:((_ buttonIndex: Int) -> Void)? = nil) {
         completeClosure = completionBlock
         
         let topMostWindow = UIApplication.shared.windows.first

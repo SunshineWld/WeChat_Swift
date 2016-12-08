@@ -64,7 +64,6 @@ class WCFriendViewController: WCBaseViewController,UITableViewDelegate, UITableV
         containerView.backgroundColor = UIColor.orange
         containerView.addSubview(activityView)
        
-//        tableView.contentInset = UIEdgeInsetsMake(-150, 0, 0, 0)
         self.view.addSubview(containerView)
     }
  
@@ -93,6 +92,8 @@ class WCFriendViewController: WCBaseViewController,UITableViewDelegate, UITableV
                 print("拍照")
             case 3:
                 print("相册")
+                let discoverNav = WCBaseNavController(rootViewController: WCAlbumsViewController())
+                self.present(discoverNav, animated: true, completion: nil)
             default:
                 break
            }
