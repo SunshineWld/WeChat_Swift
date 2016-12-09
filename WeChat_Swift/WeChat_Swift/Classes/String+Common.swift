@@ -81,6 +81,28 @@ extension String {
         return phoneTest.evaluate(with: self)
     }
     
+    //验证固定电话 座机
+    func isValidateLandlineTelephone() -> Bool {
+        let regex = "^(0[0-9]{2,3})?([2-9][0-9]{6,7})+([0-9]{1,4})?$"
+        let phoneTest = NSPredicate(format: "SELF MATCHES \(regex)")
+        
+        return phoneTest.evaluate(with: self)
+    }
+    
+    //包含中文字符
+    func containsChineseCharacter() -> Bool{
+        var isContan = false
+        for i in 0..<self.length {
+            let range = NSMakeRange(i, 1)
+            let subString = (self as NSString).substring(with: range)
+            let cString = (subString as NSString).utf8String
+            if (cString != nil) && strlen(cString) == 3 {
+                isContan = true
+            }
+        }
+        return isContan
+    }
+    
     func stringHeightWithFont(font: UIFont, width: Float) -> Float{
         if self.characters.count == 0 {
             return 0
@@ -94,7 +116,7 @@ extension String {
         size = copyString.boundingRect(with: constrainedSize,
                                                      options: NSStringDrawingOptions.usesLineFragmentOrigin,
                                                      attributes: [NSFontAttributeName: font, NSParagraphStyleAttributeName: paragraph], context: nil).size
-        return Float(size.height)
+        return Float(size.height+0.5)
     }
     
     func stringWidthWithFont(font: UIFont, height: Float) -> Float{
@@ -110,11 +132,9 @@ extension String {
         size = copyString.boundingRect(with: constrainedSize,
                                        options: NSStringDrawingOptions.usesLineFragmentOrigin,
                                        attributes: [NSFontAttributeName: font, NSParagraphStyleAttributeName: paragraph], context: nil).size
-        return Float(size.width)
+        return Float(size.width+0.5)
     }
-
     
- 
 }
 
 
