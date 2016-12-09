@@ -12,6 +12,9 @@ class WCAlbumsViewController: WCBaseViewController, UITableViewDelegate, UITable
 
     @IBOutlet weak var tableView: UITableView!
     
+    var fromPublishVC: Bool = false
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -49,6 +52,7 @@ class WCAlbumsViewController: WCBaseViewController, UITableViewDelegate, UITable
     
     func pushPhotosViewController(animated: Bool) {
         let photosVC = WCPhotosViewController()
+        photosVC.fromPublishVC = self.fromPublishVC
         self.navigationController?.pushViewController(photosVC, animated: animated)
     }
     

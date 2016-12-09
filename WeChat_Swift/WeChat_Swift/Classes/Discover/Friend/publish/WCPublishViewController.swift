@@ -12,7 +12,7 @@ class WCPublishViewController: WCBaseViewController, UITableViewDelegate, UITabl
     
     @IBOutlet weak var tableView: UITableView!
     var headerView: WCPublishHeaderView!
-    var imageArr: [String]!
+    var imageArr = [String]()
     var dataSource = [[String]]()
 
     override func viewDidLoad() {
@@ -20,7 +20,16 @@ class WCPublishViewController: WCBaseViewController, UITableViewDelegate, UITabl
         self.setupNavigationItem()
         self.setupTableView()
         
+        NotificationCenter.default.addObserver(self, selector: #selector(updateDataSource(noti:)), name: NSNotification.Name(rawValue: "Notification_SelectPhotos"), object: nil)
         
+    }
+    func updateDataSource(noti: NSNotification) {
+        let array = noti.userInfo?["imageArr"] as? [String]
+        if array != nil {
+            imageArr += array!
+        }
+        headerView.imageArray = self.imageArr
+        headerView.layoutSubviews()
     }
     func setupNavigationItem() {
         let cancelButtonItem = UIBarButtonItem.init(title: "取消", style: UIBarButtonItemStyle.plain, target: self, action: #selector(sendItem))

@@ -35,8 +35,6 @@ class WCBaseNavController: UINavigationController {
         
         self.tabBarItem.image = norImage
         self.tabBarItem.selectedImage = selImage
-        
-        
     }
     
     override func didReceiveMemoryWarning() {

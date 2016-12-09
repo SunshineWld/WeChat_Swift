@@ -20,6 +20,8 @@ class WCPhotosViewController: WCBaseViewController, UICollectionViewDelegate, UI
     @IBOutlet weak var previewBtn: UIButton!
     @IBOutlet weak var doneBtn: UIButton!
     
+    var fromPublishVC: Bool = false
+    
     var selectCell = [WCPhotoCell]()
     var dataSource = [WCPhotoModel]()
     var imageArray = [String]()
@@ -77,6 +79,11 @@ class WCPhotosViewController: WCBaseViewController, UICollectionViewDelegate, UI
             dataSource.append(model)
         }
         
+        let selectedImgArr = userDefaults.value(forKey: "SelectedImageArray") as? [String]
+        if selectedImgArr != nil {
+            imageArray += selectedImgArr!
+        }
+        
     }
     
     //MARK: UICollectionViewDelegate
@@ -93,11 +100,7 @@ class WCPhotosViewController: WCBaseViewController, UICollectionViewDelegate, UI
     //MARK: WCPhotoCellDelegate 
     func photoCell(cell: WCPhotoCell, btn: UIButton) {
         
-        if selectCell.count == 9 && !btn.isSelected{
-//            let alertViewCtrl = UIAlertController(title: "", message: "你最多只能选择9张照片", preferredStyle: UIAlertControllerStyle.alert)
-//            let action = UIAlertAction(title: "我知道了", style: UIAlertActionStyle.default, handler: nil)
-//            alertViewCtrl.addAction(action)
-//            self.present(alertViewCtrl, animated: true, completion: nil)
+        if imageArray.count == 9 && !btn.isSelected{
             
             let alertView = WCAlertView.initWithTitle(title: "弹窗提示", message: "你最多只能选择9张照片", cancelButtonTitle: "我知道了")
             alertView.showWithCompletionBlock(completionBlock: nil)
@@ -147,12 +150,16 @@ class WCPhotosViewController: WCBaseViewController, UICollectionViewDelegate, UI
     @IBAction func doneBtnAction(_ sender: UIButton) {
         
         self.cancelItem()
-
-        let publishVC = WCPublishViewController()
-        let publishNav = WCBaseNavController(rootViewController: publishVC)
-        publishVC.imageArr = self.imageArray
-        self.presentingViewController?.present(publishNav, animated: true, completion: nil)
         
+        if !fromPublishVC {
+            let publishVC = WCPublishViewController()
+            let publishNav = WCBaseNavController(rootViewController: publishVC)
+            publishVC.imageArr = self.imageArray
+            self.presentingViewController?.present(publishNav, animated: true, completion: nil)
+        }else{
+            NotificationCenter.default.post(name: NSNotification.Name(rawValue: "Notification_SelectPhotos"), object: nil, userInfo: ["imageArr": self.imageArray])
+
+        }
     }
 
     override func didReceiveMemoryWarning() {

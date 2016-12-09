@@ -133,5 +133,17 @@ extension UIView {
         }
     }
     
+    //获取父控制器
+    func nearsetViewController() -> UIViewController? {
+        var next = self.next
+        while (next != nil) {
+            if (next?.isKind(of: UIViewController.classForCoder()))! {
+                return next as? UIViewController
+            }
+            next = next?.next
+        }
+        return nil
+    }
+    
     
 }
