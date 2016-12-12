@@ -27,6 +27,7 @@ class WCPublishHeaderView: UIView, UICollectionViewDelegate, UICollectionViewDat
                 self.imageArray.append("AlbumAddBtn")
             }
             self.imgCollectionView.reloadData()
+            self.layoutSubviews()
         }
         
     }
@@ -85,8 +86,6 @@ class WCPublishHeaderView: UIView, UICollectionViewDelegate, UICollectionViewDat
     }
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         if imageArray[indexPath.item] == "AlbumAddBtn" {
-            userDefaults.set(imageArray.remove(at: imageArray.count-1), forKey: "SelectedImageArray")
-            userDefaults.synchronize()
 
             let alertSheet = WCAlertSheet.initWithTitle(title: nil, cancelButtonTitle: "取消", otherButtonTitleArray: ["拍照", "从相册选择"])
             alertSheet.showWithCompletionBlock(completionBlock: { (index) in

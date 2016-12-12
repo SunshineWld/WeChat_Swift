@@ -78,12 +78,6 @@ class WCPhotosViewController: WCBaseViewController, UICollectionViewDelegate, UI
             let model = WCPhotoModel.initWithDict(dict: dict) as! WCPhotoModel
             dataSource.append(model)
         }
-        
-        let selectedImgArr = userDefaults.value(forKey: "SelectedImageArray") as? [String]
-        if selectedImgArr != nil {
-            imageArray += selectedImgArr!
-        }
-        
     }
     
     //MARK: UICollectionViewDelegate
@@ -100,7 +94,7 @@ class WCPhotosViewController: WCBaseViewController, UICollectionViewDelegate, UI
     //MARK: WCPhotoCellDelegate 
     func photoCell(cell: WCPhotoCell, btn: UIButton) {
         
-        if imageArray.count == 9 && !btn.isSelected{
+        if selectCell.count == 9 && !btn.isSelected{
             
             let alertView = WCAlertView.initWithTitle(title: "弹窗提示", message: "你最多只能选择9张照片", cancelButtonTitle: "我知道了")
             alertView.showWithCompletionBlock(completionBlock: nil)

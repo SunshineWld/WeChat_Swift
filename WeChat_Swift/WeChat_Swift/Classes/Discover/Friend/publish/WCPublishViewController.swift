@@ -29,7 +29,7 @@ class WCPublishViewController: WCBaseViewController, UITableViewDelegate, UITabl
             imageArr += array!
         }
         headerView.imageArray = self.imageArr
-        headerView.layoutSubviews()
+        tableView.reloadData()
     }
     func setupNavigationItem() {
         let cancelButtonItem = UIBarButtonItem.init(title: "取消", style: UIBarButtonItemStyle.plain, target: self, action: #selector(sendItem))
@@ -47,7 +47,6 @@ class WCPublishViewController: WCBaseViewController, UITableViewDelegate, UITabl
         headerView = Bundle.main.loadNibNamed("WCPublishHeaderView", owner: self, options: nil)?.last as! WCPublishHeaderView
         headerView.imageArray = self.imageArr
         tableView.tableHeaderView = headerView
-        headerView.layoutSubviews()
     }
     
     //MARK: UITableViewDelegate
@@ -74,6 +73,7 @@ class WCPublishViewController: WCBaseViewController, UITableViewDelegate, UITabl
         return 19
     }
     func sendItem() {
+        
         self.dismiss(animated: true, completion: nil)
     }
 
