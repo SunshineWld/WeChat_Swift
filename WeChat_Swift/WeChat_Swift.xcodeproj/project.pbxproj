@@ -190,6 +190,9 @@
 		4CFA72C51DFE7B620047DBF1 /* WCMyInfoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4CFA72C31DFE7B620047DBF1 /* WCMyInfoViewController.xib */; };
 		4CFA72CA1DFE7CE10047DBF1 /* WCSettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CFA72C81DFE7CE10047DBF1 /* WCSettingViewController.swift */; };
 		4CFA72CB1DFE7CE10047DBF1 /* WCSettingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4CFA72C91DFE7CE10047DBF1 /* WCSettingViewController.xib */; };
+		4CFA72CE1DFE881D0047DBF1 /* WCMyInfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CFA72CC1DFE881D0047DBF1 /* WCMyInfoCell.swift */; };
+		4CFA72CF1DFE881D0047DBF1 /* WCMyInfoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4CFA72CD1DFE881D0047DBF1 /* WCMyInfoCell.xib */; };
+		4CFA72D11DFE88DE0047DBF1 /* pub_accessory@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CFA72D01DFE88DE0047DBF1 /* pub_accessory@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -382,6 +385,9 @@
 		4CFA72C31DFE7B620047DBF1 /* WCMyInfoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WCMyInfoViewController.xib; sourceTree = "<group>"; };
 		4CFA72C81DFE7CE10047DBF1 /* WCSettingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WCSettingViewController.swift; sourceTree = "<group>"; };
 		4CFA72C91DFE7CE10047DBF1 /* WCSettingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WCSettingViewController.xib; sourceTree = "<group>"; };
+		4CFA72CC1DFE881D0047DBF1 /* WCMyInfoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WCMyInfoCell.swift; sourceTree = "<group>"; };
+		4CFA72CD1DFE881D0047DBF1 /* WCMyInfoCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WCMyInfoCell.xib; sourceTree = "<group>"; };
+		4CFA72D01DFE88DE0047DBF1 /* pub_accessory@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pub_accessory@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -721,6 +727,7 @@
 		4C4AC84A1DDC5A3000F115CB /* Pub */ = {
 			isa = PBXGroup;
 			children = (
+				4CFA72D01DFE88DE0047DBF1 /* pub_accessory@2x.png */,
 				4C4AC90A1DDC5E1000F115CB /* Dimensional-_Code_Bg@2x.png */,
 				4C4AC8FA1DDC5D9E00F115CB /* tabbar_contacts@2x.png */,
 				4C4AC8FB1DDC5D9E00F115CB /* tabbar_contactsHL@2x.png */,
@@ -819,6 +826,8 @@
 			children = (
 				4CFA72C21DFE7B620047DBF1 /* WCMyInfoViewController.swift */,
 				4CFA72C31DFE7B620047DBF1 /* WCMyInfoViewController.xib */,
+				4CFA72CC1DFE881D0047DBF1 /* WCMyInfoCell.swift */,
+				4CFA72CD1DFE881D0047DBF1 /* WCMyInfoCell.xib */,
 			);
 			name = MyInfo;
 			sourceTree = "<group>";
@@ -916,6 +925,7 @@
 				4CCD8E6A1DDDADB900EC2686 /* WCQRCodeViewController.xib in Resources */,
 				4C4AC8E61DDC5D8500F115CB /* barbuttonicon_set@3x.png in Resources */,
 				4CFA72CB1DFE7CE10047DBF1 /* WCSettingViewController.xib in Resources */,
+				4CFA72D11DFE88DE0047DBF1 /* pub_accessory@2x.png in Resources */,
 				4C4AC8E51DDC5D8500F115CB /* barbuttonicon_set@2x.png in Resources */,
 				4C40780F1DE578E8000B823F /* 03.jpg in Resources */,
 				4C4AC89A1DDC5D7100F115CB /* AlbumOperateMoreHL@3x.png in Resources */,
@@ -954,6 +964,7 @@
 				4C4AC8961DDC5D7100F115CB /* AlbumLike@3x.png in Resources */,
 				4C4077E21DE56F4F000B823F /* unchecked.png in Resources */,
 				4C4AC8BE1DDC5D7100F115CB /* LikeCmtBg@2x.png in Resources */,
+				4CFA72CF1DFE881D0047DBF1 /* WCMyInfoCell.xib in Resources */,
 				4C4AC8AA1DDC5D7100F115CB /* Camera@3x.png in Resources */,
 				4C4AC8A11DDC5D7100F115CB /* bottleButtonFish.png in Resources */,
 				4C4AC9071DDC5D9E00F115CB /* tabbar_mainframeHL@2x.png in Resources */,
@@ -1077,6 +1088,7 @@
 				4C4077CE1DE56226000B823F /* WCFriendHeaderView.swift in Sources */,
 				4CD288E41DED31DC00E3D37A /* UIView+Addition.swift in Sources */,
 				4CDFA2B21DF5355F00A4AE92 /* NSString+Common.m in Sources */,
+				4CFA72CE1DFE881D0047DBF1 /* WCMyInfoCell.swift in Sources */,
 				4CFA72CA1DFE7CE10047DBF1 /* WCSettingViewController.swift in Sources */,
 				4C4AC9261DDC6C1700F115CB /* WCHomeViewCell.swift in Sources */,
 				4C4AC90D1DDC62D600F115CB /* WCHomeNavController.swift in Sources */,
