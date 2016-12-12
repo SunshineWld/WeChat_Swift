@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<array>
+		<dict>
+			<key>icon</key>
+			<string>my</string>
+			<key>title</key>
+			<string>我的名字</string>
+			<key>details</key>
+			<string>微信号：woshishui</string>
+		</dict>
+	</array>
+	<array>
+		<dict>
+			<key>icon</key>
+			<string>MoreMyAlbum</string>
+			<key>title</key>
+			<string>相册</string>
+			<key>target</key>
+			<string>dffcc</string>
+		</dict>
+		<dict>
+			<key>icon</key>
+			<string>MoreMyFavorites</string>
+			<key>title</key>
+			<string>收藏</string>
+			<key>target</key>
+			<string>dffcc</string>
+		</dict>
+		<dict>
+			<key>icon</key>
+			<string>MoreMyBankCard</string>
+			<key>title</key>
+			<string>钱包</string>
+			<key>target</key>
+			<string>dffcc</string>
+		</dict>
+	</array>
+	<array>
+		<dict>
+			<key>icon</key>
+			<string>MoreExpressionShops</string>
+			<key>title</key>
+			<string>表情</string>
+			<key>target</key>
+			<string>dffcc</string>
+		</dict>
+	</array>
+	<array>
+		<dict>
+			<key>icon</key>
+			<string>MoreSetting</string>
+			<key>title</key>
+			<string>设置</string>
+			<key>target</key>
+			<string>dffcc</string>
+		</dict>
+	</array>
+</array>
+</plist>

@@ -185,6 +185,11 @@
 		4CDFA2AD1DEED62B00A4AE92 /* WCAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CDFA2AC1DEED62B00A4AE92 /* WCAlertView.swift */; };
 		4CDFA2B21DF5355F00A4AE92 /* NSString+Common.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CDFA2AF1DF5355F00A4AE92 /* NSString+Common.m */; };
 		4CDFA2B31DF5355F00A4AE92 /* NSString+Emoji.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CDFA2B11DF5355F00A4AE92 /* NSString+Emoji.m */; };
+		4CFA72C01DFE5A750047DBF1 /* WCMyContents.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4CFA72BF1DFE5A750047DBF1 /* WCMyContents.plist */; };
+		4CFA72C41DFE7B620047DBF1 /* WCMyInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CFA72C21DFE7B620047DBF1 /* WCMyInfoViewController.swift */; };
+		4CFA72C51DFE7B620047DBF1 /* WCMyInfoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4CFA72C31DFE7B620047DBF1 /* WCMyInfoViewController.xib */; };
+		4CFA72CA1DFE7CE10047DBF1 /* WCSettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CFA72C81DFE7CE10047DBF1 /* WCSettingViewController.swift */; };
+		4CFA72CB1DFE7CE10047DBF1 /* WCSettingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4CFA72C91DFE7CE10047DBF1 /* WCSettingViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -372,6 +377,11 @@
 		4CDFA2AF1DF5355F00A4AE92 /* NSString+Common.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Common.m"; sourceTree = "<group>"; };
 		4CDFA2B01DF5355F00A4AE92 /* NSString+Emoji.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Emoji.h"; sourceTree = "<group>"; };
 		4CDFA2B11DF5355F00A4AE92 /* NSString+Emoji.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Emoji.m"; sourceTree = "<group>"; };
+		4CFA72BF1DFE5A750047DBF1 /* WCMyContents.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = WCMyContents.plist; sourceTree = "<group>"; };
+		4CFA72C21DFE7B620047DBF1 /* WCMyInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WCMyInfoViewController.swift; sourceTree = "<group>"; };
+		4CFA72C31DFE7B620047DBF1 /* WCMyInfoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WCMyInfoViewController.xib; sourceTree = "<group>"; };
+		4CFA72C81DFE7CE10047DBF1 /* WCSettingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WCSettingViewController.swift; sourceTree = "<group>"; };
+		4CFA72C91DFE7CE10047DBF1 /* WCSettingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WCSettingViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -563,6 +573,9 @@
 				4C4AC9221DDC63B900F115CB /* WCMyNavController.swift */,
 				4C4AC91A1DDC637000F115CB /* WCMyViewController.swift */,
 				4C4AC91B1DDC637000F115CB /* WCMyViewController.xib */,
+				4CFA72BF1DFE5A750047DBF1 /* WCMyContents.plist */,
+				4CFA72C11DFE7AF50047DBF1 /* MyInfo */,
+				4CFA72C71DFE7CBE0047DBF1 /* Setting */,
 			);
 			path = My;
 			sourceTree = "<group>";
@@ -801,6 +814,24 @@
 			name = Extension;
 			sourceTree = "<group>";
 		};
+		4CFA72C11DFE7AF50047DBF1 /* MyInfo */ = {
+			isa = PBXGroup;
+			children = (
+				4CFA72C21DFE7B620047DBF1 /* WCMyInfoViewController.swift */,
+				4CFA72C31DFE7B620047DBF1 /* WCMyInfoViewController.xib */,
+			);
+			name = MyInfo;
+			sourceTree = "<group>";
+		};
+		4CFA72C71DFE7CBE0047DBF1 /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				4CFA72C81DFE7CE10047DBF1 /* WCSettingViewController.swift */,
+				4CFA72C91DFE7CE10047DBF1 /* WCSettingViewController.xib */,
+			);
+			name = Setting;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -884,6 +915,7 @@
 				4C4AC8B91DDC5D7100F115CB /* ff_IconShowAlbum@2x.png in Resources */,
 				4CCD8E6A1DDDADB900EC2686 /* WCQRCodeViewController.xib in Resources */,
 				4C4AC8E61DDC5D8500F115CB /* barbuttonicon_set@3x.png in Resources */,
+				4CFA72CB1DFE7CE10047DBF1 /* WCSettingViewController.xib in Resources */,
 				4C4AC8E51DDC5D8500F115CB /* barbuttonicon_set@2x.png in Resources */,
 				4C40780F1DE578E8000B823F /* 03.jpg in Resources */,
 				4C4AC89A1DDC5D7100F115CB /* AlbumOperateMoreHL@3x.png in Resources */,
@@ -916,6 +948,7 @@
 				4C4AC9021DDC5D9E00F115CB /* tabbar_contacts@2x.png in Resources */,
 				4C4AC9191DDC636100F115CB /* WCDiscoverViewController.xib in Resources */,
 				4C4AC9081DDC5D9E00F115CB /* tabbar_me@2x.png in Resources */,
+				4CFA72C01DFE5A750047DBF1 /* WCMyContents.plist in Resources */,
 				4C40780E1DE578E8000B823F /* 23.jpg in Resources */,
 				4C4AC8BA1DDC5D7100F115CB /* ff_IconShowAlbum@3x.png in Resources */,
 				4C4AC8961DDC5D7100F115CB /* AlbumLike@3x.png in Resources */,
@@ -975,6 +1008,7 @@
 				4C4AC8CC1DDC5D7100F115CB /* Shake_Logo_Up@2x.png in Resources */,
 				4C4AC8E41DDC5D8500F115CB /* barbuttonicon_set.png in Resources */,
 				4CCD8E6E1DDDADC900EC2686 /* WCShakeViewController.xib in Resources */,
+				4CFA72C51DFE7B620047DBF1 /* WCMyInfoViewController.xib in Resources */,
 				4C4AC9061DDC5D9E00F115CB /* tabbar_mainframe@2x.png in Resources */,
 				4C4AC8A71DDC5D7100F115CB /* bottleNightBkg@2x.jpg in Resources */,
 				4C4078111DE578E8000B823F /* 05.jpg in Resources */,
@@ -1043,12 +1077,14 @@
 				4C4077CE1DE56226000B823F /* WCFriendHeaderView.swift in Sources */,
 				4CD288E41DED31DC00E3D37A /* UIView+Addition.swift in Sources */,
 				4CDFA2B21DF5355F00A4AE92 /* NSString+Common.m in Sources */,
+				4CFA72CA1DFE7CE10047DBF1 /* WCSettingViewController.swift in Sources */,
 				4C4AC9261DDC6C1700F115CB /* WCHomeViewCell.swift in Sources */,
 				4C4AC90D1DDC62D600F115CB /* WCHomeNavController.swift in Sources */,
 				4CCD8E611DDDAD8B00EC2686 /* WCUserInfoViewController.swift in Sources */,
 				4CCD8E5D1DDDAD7E00EC2686 /* WCMessageViewController.swift in Sources */,
 				4C4AC9141DDC634B00F115CB /* WCContactViewController.swift in Sources */,
 				4CCD8E6D1DDDADC900EC2686 /* WCShakeViewController.swift in Sources */,
+				4CFA72C41DFE7B620047DBF1 /* WCMyInfoViewController.swift in Sources */,
 				4C1993FA1DE68CF1009F6078 /* WCPublishHeaderView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
