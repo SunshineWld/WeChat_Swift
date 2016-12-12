@@ -87,6 +87,9 @@ class WCPublishHeaderView: UIView, UICollectionViewDelegate, UICollectionViewDat
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         if imageArray[indexPath.item] == "AlbumAddBtn" {
 
+            userDefaults.set(imageArray.count-1, forKey: "SelectedImgCount")
+            userDefaults.synchronize()
+
             let alertSheet = WCAlertSheet.initWithTitle(title: nil, cancelButtonTitle: "取消", otherButtonTitleArray: ["拍照", "从相册选择"])
             alertSheet.showWithCompletionBlock(completionBlock: { (index) in
                 if index == 2 {

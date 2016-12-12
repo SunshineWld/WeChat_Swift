@@ -73,7 +73,7 @@ class WCPublishViewController: WCBaseViewController, UITableViewDelegate, UITabl
         return 19
     }
     func sendItem() {
-        
+        userDefaults.removeObject(forKey: "SelectedImgCount")
         self.dismiss(animated: true, completion: nil)
     }
 
