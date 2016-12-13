@@ -193,6 +193,9 @@
 		4CFA72CE1DFE881D0047DBF1 /* WCMyInfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CFA72CC1DFE881D0047DBF1 /* WCMyInfoCell.swift */; };
 		4CFA72CF1DFE881D0047DBF1 /* WCMyInfoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4CFA72CD1DFE881D0047DBF1 /* WCMyInfoCell.xib */; };
 		4CFA72D11DFE88DE0047DBF1 /* pub_accessory@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CFA72D01DFE88DE0047DBF1 /* pub_accessory@2x.png */; };
+		4CFA72D41DFFA0080047DBF1 /* scanBackground@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CFA72D21DFFA0080047DBF1 /* scanBackground@2x.png */; };
+		4CFA72D51DFFA0080047DBF1 /* scanLine@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CFA72D31DFFA0080047DBF1 /* scanLine@2x.png */; };
+		4CFA72D71DFFEF630047DBF1 /* WCQRCodeDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CFA72D61DFFEF630047DBF1 /* WCQRCodeDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -388,6 +391,9 @@
 		4CFA72CC1DFE881D0047DBF1 /* WCMyInfoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WCMyInfoCell.swift; sourceTree = "<group>"; };
 		4CFA72CD1DFE881D0047DBF1 /* WCMyInfoCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WCMyInfoCell.xib; sourceTree = "<group>"; };
 		4CFA72D01DFE88DE0047DBF1 /* pub_accessory@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pub_accessory@2x.png"; sourceTree = "<group>"; };
+		4CFA72D21DFFA0080047DBF1 /* scanBackground@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "scanBackground@2x.png"; sourceTree = "<group>"; };
+		4CFA72D31DFFA0080047DBF1 /* scanLine@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "scanLine@2x.png"; sourceTree = "<group>"; };
+		4CFA72D61DFFEF630047DBF1 /* WCQRCodeDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WCQRCodeDetailViewController.swift; path = QRCode/WCQRCodeDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -684,6 +690,8 @@
 				4C4AC88E1DDC5D7100F115CB /* Shake_Logo_Down@2x.png */,
 				4C4AC88F1DDC5D7100F115CB /* Shake_Logo_Up@2x.png */,
 				4C4AC8901DDC5D7100F115CB /* ShakeHideImg_women@2x.png */,
+				4CFA72D21DFFA0080047DBF1 /* scanBackground@2x.png */,
+				4CFA72D31DFFA0080047DBF1 /* scanLine@2x.png */,
 			);
 			path = Discover;
 			sourceTree = "<group>";
@@ -792,6 +800,7 @@
 			children = (
 				4CCD8E671DDDADB900EC2686 /* WCQRCodeViewController.swift */,
 				4CCD8E681DDDADB900EC2686 /* WCQRCodeViewController.xib */,
+				4CFA72D61DFFEF630047DBF1 /* WCQRCodeDetailViewController.swift */,
 			);
 			name = QRCode;
 			sourceTree = "<group>";
@@ -933,6 +942,7 @@
 				4C4AC8321DDC565300F115CB /* LaunchScreen.storyboard in Resources */,
 				4C4AC8C91DDC5D7100F115CB /* Shake_Line_Down@2x.png in Resources */,
 				4C4078001DE578E8000B823F /* 10.jpg in Resources */,
+				4CFA72D41DFFA0080047DBF1 /* scanBackground@2x.png in Resources */,
 				4C1993F81DE5A0EF009F6078 /* WCPublishViewController.xib in Resources */,
 				4C4AC8B71DDC5D7100F115CB /* ff_IconShake@3x.png in Resources */,
 				4C4078071DE578E8000B823F /* 17.jpg in Resources */,
@@ -1040,6 +1050,7 @@
 				4C4AC8F01DDC5D8500F115CB /* MoreMyFavorites.png in Resources */,
 				4C4AC8B01DDC5D7100F115CB /* ff_IconLocationService@2x.png in Resources */,
 				4C4AC89E1DDC5D7100F115CB /* bottleBkgSpotLight@2x.png in Resources */,
+				4CFA72D51DFFA0080047DBF1 /* scanLine@2x.png in Resources */,
 				4C4AC8A21DDC5D7100F115CB /* bottleButtonFish@2x.png in Resources */,
 				4C40780C1DE578E8000B823F /* 21.jpg in Resources */,
 				4C4AC8BC1DDC5D7100F115CB /* Like@2x.png in Resources */,
@@ -1066,6 +1077,7 @@
 				4C89AFD41DEBFDD700A94D45 /* WCConfig.swift in Sources */,
 				4CDFA2B31DF5355F00A4AE92 /* NSString+Emoji.m in Sources */,
 				4C4078171DE596A5000B823F /* WCPhotoModel.swift in Sources */,
+				4CFA72D71DFFEF630047DBF1 /* WCQRCodeDetailViewController.swift in Sources */,
 				4C4AC84F1DDC5BA100F115CB /* WCBaseTabBarController.swift in Sources */,
 				4C4AC91C1DDC637000F115CB /* WCMyViewController.swift in Sources */,
 				4C1A87AA1DF6A6A5007CBE50 /* String+Common.swift in Sources */,

@@ -81,6 +81,15 @@ extension String {
         return phoneTest.evaluate(with: self)
     }
     
+    //是否是网址
+    func isValidateWebUrl() -> Bool {
+        let webRegex = "((http[s]{0,1}|ftp)://[a-zA-Z0-9\\.\\-]+\\.([a-zA-Z]{2,4})(:\\d+)?(/[a-zA-Z0-9\\.\\-~!@#$%^&*+?:_/=<>]*)?)|(www.[a-zA-Z0-9\\.\\-]+\\.([a-zA-Z]{2,4})(:\\d+)?(/[a-zA-Z0-9\\.\\-~!@#$%^&*+?:_/=<>]*)?)"
+        let webTest = NSPredicate(format: "SELF MATCHES \(webRegex)")
+        
+        return webTest.evaluate(with: self)
+    }
+    
+    
     //验证固定电话 座机
     func isValidateLandlineTelephone() -> Bool {
         let regex = "^(0[0-9]{2,3})?([2-9][0-9]{6,7})+([0-9]{1,4})?$"

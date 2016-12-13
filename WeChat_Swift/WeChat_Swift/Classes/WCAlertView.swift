@@ -72,6 +72,12 @@ class WCAlertView: UIView {
     }
     
     //MARK:初始化标题内容
+    static func showMessage(message: String) {
+        let alertView = WCAlertView.initWithMessage(message: message)
+        alertView.showWithCompletionBlock()
+    }
+    
+    
     static func initWithMessage(message: String) -> WCAlertView {
         return self.initWithTitle(title: nil, message: message, cancelButtonTitle: "确定", otherButtonTitle: nil)
     }
