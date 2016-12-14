@@ -8,7 +8,7 @@
 
 import UIKit
 
-class WCBaseNavController: UINavigationController {
+class WCBaseNavController: UINavigationController, UINavigationControllerDelegate, UIGestureRecognizerDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -18,6 +18,10 @@ class WCBaseNavController: UINavigationController {
         self.navigationBar.setBackgroundImage(UIImage.init(named: "Dimensional-_Code_Bg"), for: UIBarMetrics.default)
         self.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName:UIColor.white]
         self.navigationBar.tintColor = UIColor.white
+        
+        self.delegate = self
+        
+        self.interactivePopGestureRecognizer?.delegate = self
     }
     
     override var preferredStatusBarStyle: UIStatusBarStyle {
@@ -35,6 +39,18 @@ class WCBaseNavController: UINavigationController {
         
         self.tabBarItem.image = norImage
         self.tabBarItem.selectedImage = selImage
+    }
+    
+    override func pushViewController(_ viewController: UIViewController, animated: Bool) {
+        super.pushViewController(viewController, animated: animated)
+
+        self.interactivePopGestureRecognizer?.isEnabled = false
+        
+    }
+    
+    func navigationController(_ navigationController: UINavigationController, didShow viewController: UIViewController, animated: Bool) {
+        
+        navigationController.interactivePopGestureRecognizer?.isEnabled = true
     }
     
     override func didReceiveMemoryWarning() {

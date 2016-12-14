@@ -14,6 +14,13 @@ class WCUserInfoViewController: WCBaseViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+        let leftItem = UIBarButtonItem(title: "返回", style: UIBarButtonItemStyle.plain, target: self, action: #selector(leftItemAction))
+        self.navigationItem.leftBarButtonItem = leftItem
+    }
+    
+    func leftItemAction() {
+        self.navigationController?.popViewController(animated: true)
     }
 
     override func didReceiveMemoryWarning() {
