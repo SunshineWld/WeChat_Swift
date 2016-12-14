@@ -173,7 +173,47 @@ class WCQRCodeViewController: WCBaseViewController, AVCaptureMetadataOutputObjec
     
     //MARK: 打开相册
     func rightItemAction() {
+//        let albumsVC = WCAlbumsViewController()
+//        self.present(albumsVC, animated: false, completion: nil)
+        //1.判断相册是否可以打开
+        if !(UIImagePickerController.isSourceTypeAvailable(UIImagePickerControllerSourceType.photoLibrary)) {
+            return
+        }
+        //2.创建图片选择控制器
+        let imagePicker = UIImagePickerController()
+        imagePicker.sourceType = UIImagePickerControllerSourceType.photoLibrary
+        imagePicker.delegate = self
+        imagePicker.allowsEditing = true
+        self.present(imagePicker, animated: true, completion: nil)
         
+    }
+    
+    //MARK: UIImagePickerController
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
+        
+        picker.dismiss(animated: true, completion: nil)
+
+        //1.取出选中的照片
+        let pickImage = info[UIImagePickerControllerOriginalImage] as! UIImage
+        let ciImage = CIImage(cgImage: pickImage.cgImage!)
+        
+        //2.从选择的图片中读取二维码数据
+        //2.1 创建一个探测器
+        let detector = CIDetector(ofType: CIDetectorTypeQRCode, context: nil, options: [CIDetectorAccuracy: CIDetectorAccuracyHigh])
+        //2.2 利用探测器探测数据
+        let feature = detector?.features(in: ciImage) as! [CIQRCodeFeature]
+        if feature.count == 0 {
+            WCAlertView.showMessage(message: "没有扫描到有效二维码")
+        }else {
+            //2.3 取出探测到的数据
+            self.session.stopRunning()
+            self.link.remove(from: RunLoop.main, forMode: RunLoopMode.commonModes)
+            
+            for result: CIQRCodeFeature in feature {
+                let urlStr = result.messageString
+                self.handleQRCodeInfo(message: urlStr!)
+            }
+        }
     }
     
     //MARK: AVCaptureMetadataOutputObjectsDelegate
