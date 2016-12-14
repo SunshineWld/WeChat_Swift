@@ -12,6 +12,7 @@
 		4C1993FA1DE68CF1009F6078 /* WCPublishHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1993F91DE68CF1009F6078 /* WCPublishHeaderView.swift */; };
 		4C1993FC1DE68D07009F6078 /* WCPublishHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C1993FB1DE68D07009F6078 /* WCPublishHeaderView.xib */; };
 		4C1A87AA1DF6A6A5007CBE50 /* String+Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1A87A91DF6A6A5007CBE50 /* String+Common.swift */; };
+		4C1C59091E01190000A3D056 /* WCButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1C59081E01190000A3D056 /* WCButton.swift */; };
 		4C4077CE1DE56226000B823F /* WCFriendHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C4077CA1DE56226000B823F /* WCFriendHeaderView.swift */; };
 		4C4077CF1DE56226000B823F /* WCFriendHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C4077CB1DE56226000B823F /* WCFriendHeaderView.xib */; };
 		4C4077D51DE5627E000B823F /* WCPhotosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C4077D31DE5627E000B823F /* WCPhotosViewController.swift */; };
@@ -204,6 +205,7 @@
 		4C1993F91DE68CF1009F6078 /* WCPublishHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WCPublishHeaderView.swift; sourceTree = "<group>"; };
 		4C1993FB1DE68D07009F6078 /* WCPublishHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WCPublishHeaderView.xib; sourceTree = "<group>"; };
 		4C1A87A91DF6A6A5007CBE50 /* String+Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Common.swift"; sourceTree = "<group>"; };
+		4C1C59081E01190000A3D056 /* WCButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WCButton.swift; path = Shake/WCButton.swift; sourceTree = "<group>"; };
 		4C4077CA1DE56226000B823F /* WCFriendHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WCFriendHeaderView.swift; path = Friend/WCFriendHeaderView.swift; sourceTree = "<group>"; };
 		4C4077CB1DE56226000B823F /* WCFriendHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = WCFriendHeaderView.xib; path = Friend/WCFriendHeaderView.xib; sourceTree = "<group>"; };
 		4C4077D31DE5627E000B823F /* WCPhotosViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WCPhotosViewController.swift; sourceTree = "<group>"; };
@@ -810,6 +812,7 @@
 			children = (
 				4CCD8E6B1DDDADC900EC2686 /* WCShakeViewController.swift */,
 				4CCD8E6C1DDDADC900EC2686 /* WCShakeViewController.xib */,
+				4C1C59081E01190000A3D056 /* WCButton.swift */,
 			);
 			name = Shake;
 			sourceTree = "<group>";
@@ -1088,6 +1091,7 @@
 				4C4AC9101DDC62F000F115CB /* WCHomeViewController.swift in Sources */,
 				4C4077D51DE5627E000B823F /* WCPhotosViewController.swift in Sources */,
 				4C4AC8511DDC5BB900F115CB /* WCBaseViewController.swift in Sources */,
+				4C1C59091E01190000A3D056 /* WCButton.swift in Sources */,
 				4CDFA2AD1DEED62B00A4AE92 /* WCAlertView.swift in Sources */,
 				4C4AC84D1DDC5B7F00F115CB /* WCBaseNavController.swift in Sources */,
 				4C1993F71DE5A0EF009F6078 /* WCPublishViewController.swift in Sources */,
